@@ -37,12 +37,13 @@ namespace TheMakerShowBot
                     switch (mkLuis.intents[0].intent)
                     {
                         case "LearnTopic":
-                            strRet = GetResource(mkLuis.entities[0].entity);
+                            strRet = mkLuis.entities.Count() > 0 ? GetResource(mkLuis.entities[0].entity) : "";
                             break;
                         case "BuyHardware":
-                            strRet = GetStore(mkLuis.entities[0].entity);
+                            strRet = mkLuis.entities.Count() > 0 ? GetStore(mkLuis.entities[0].entity) : "";
                             break;
                         default:
+                            strRet = "I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
                             break;
                     }
                 }
@@ -77,47 +78,52 @@ namespace TheMakerShowBot
                 case "arduino":
                 case "arduino uno":
                 case "arduinouno":
-                    strRet = "You should watch The Maker Show Episode 1 - Blinking an LED... Now What?";
+                    strRet = "Get started at http://arduino.cc. You should also watch The Maker Show Episode 1 - Blinking an LED... Now What?";
                     break;
                 case "raspberry pi":
                 case "raspberrypi":
-                    strRet = "You should watch The Maker Show Episode 5 - Installing Windows 10 on a Raspberry Pi 2";
+                    strRet = "Get started at https://www.raspberrypi.org/. You should also watch The Maker Show Episode 5 - Installing Windows 10 on a Raspberry Pi 2";
                     break;
                 case "3d printing":
                 case "3d printer":
                     strRet = "You should watch The Maker Show Episode 4 - Building and Printing a 3D Model to Fit a Real Component";
                     break;
                 case "soldering":
+                case "solder":
                     strRet = "You should watch The Maker Show Episode 6 - Soldering Basics";
                     break;
                 case "windows 10 iot core":
                 case "windows iot":
                 case "windows iot core":
-                    strRet = "You should watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
+                    strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
                     break;
                 case "photon":
                 case "particle photon":
                 case "particle":
-                    strRet = "You should watch The Maker Show Episode 7 - The Photon Awakens";
+                case "electron":
+                case "particle electron":
+                    strRet = "Get started at http://particle.io. You should also watch The Maker Show Episode 7 - The Photon Awakens";
                     break;
                 case "wearables":
                 case "lillypad":
                     strRet = "You should watch The Maker Show Episode 9 - An Introduction to Wearables";
                     break;
                 case "laser cutting":
+                case "laser cutter":
                     strRet = "You should watch The Maker Show: Mini - Learning how to Laser Cut";
                     break;
                 case "tessel":
                 case "tessel 2":
-                    strRet = "You should watch The Maker Show Episode 18 - Easy IoT with the Tessel 2";
+                    strRet = "Get started at https://www.tessel.io/. You should also watch The Maker Show Episode 18 - Easy IoT with the Tessel 2";
                     break;
-                //case "":
-                //    strRet = "You should watch The Maker Show Episode";
-                //    break;
-                //case "":
-                //    strRet = "You should watch The Maker Show Episode";
-                //    break;
+                case "esp8266":
+                    strRet = "Get started at https://espressif.com/. You also should watch The Maker Show: Episode 16 - The Miniscule ESP8266";
+                    break;
+                case "alljoyn":
+                    strRet = "get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
+                    break;
                 default:
+                    strRet = "I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
                     break;
             }
 
@@ -129,6 +135,62 @@ namespace TheMakerShowBot
         {
             string strRet = string.Empty;
 
+            switch (strTech.ToLower())
+            {
+                case "arduino":
+                case "arduino uno":
+                case "arduinouno":
+                    strRet = "Get started at http://arduino.cc.";
+                    break;
+                case "raspberry pi":
+                case "raspberrypi":
+                    strRet = "Get started at https://www.raspberrypi.org/.";
+                    break;
+                //case "3d printing":
+                //case "3d printer":
+                //    strRet = "You should watch The Maker Show Episode 4 - Building and Printing a 3D Model to Fit a Real Component";
+                //    break;
+                //case "soldering":
+                //case "solder":
+                //    strRet = "You should watch The Maker Show Episode 6 - Soldering Basics";
+                //    break;
+                //case "windows 10 iot core":
+                //case "windows iot":
+                //case "windows iot core":
+                //    strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
+                //    break;
+                case "photon":
+                case "particle photon":
+                case "particle":
+                case "electron":
+                case "particle electron":
+                    strRet = "Get started at http://particle.io.";
+                    break;
+                //case "wearables":
+                case "lillypad":
+                    strRet = "Get started at http://arduino.cc.";
+                    break;
+                //case "laser cutting":
+                //case "laser cutter":
+                //    strRet = "You should watch The Maker Show: Mini - Learning how to Laser Cut";
+                //    break;
+                case "tessel":
+                case "tessel 2":
+                    strRet = "Get started at https://www.tessel.io/.";
+                    break;
+                case "esp8266":
+                    strRet = "Get started at https://espressif.com/.";
+                    break;
+                //case "alljoyn":
+                //    strRet = "get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
+                //    break;
+                default:
+                    strRet = "I don't have a specific recommendation for this.";
+                    break;
+            }
+
+            strRet += " I also recommend checking out http://sparkfun.com and http://adafruit.com for all sorts of maker & electronics stuff.";
+
             return strRet;
         }
 
@@ -136,9 +198,7 @@ namespace TheMakerShowBot
         {
             if (activity.Type == ActivityTypes.Ping)
             {
-                Activity reply = activity.CreateReply();
-                reply.Type = ActivityTypes.Ping;
-                return reply;
+                
             }
             else if (activity.Type == ActivityTypes.DeleteUserData)
             {
@@ -147,11 +207,14 @@ namespace TheMakerShowBot
             }
             else if (activity.Type == ActivityTypes.ContactRelationUpdate)
             {
-                // Lets your bot know if a bot has been added or removed as a contact for a user
+                // Handle add/remove from contact lists
+                // Activity.From + Activity.Action represent what happened
             }
             else if (activity.Type == ActivityTypes.ConversationUpdate)
             {
-                // Replaces Bot/User Added/Removed To/From Conversation with a single method
+                // Handle conversation state changes, like members being added and removed
+                // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
+                // Not available in all channels
             }
             else if (activity.Type == ActivityTypes.Typing)
             {
