@@ -45,6 +45,9 @@ namespace TheMakerShowBot
                         case "Greeting":
                             strRet = "Hi! I'm the Maker Show Bot and I'm here to help you become a maker";
                             break;
+                        case "Help":
+                            strRet = "Simply ask me questions about different technologies you want to learn or buy";
+                            break;
                         default:
                             strRet = "I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
                             break;
