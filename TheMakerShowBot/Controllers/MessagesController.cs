@@ -51,8 +51,11 @@ namespace TheMakerShowBot
                         case "ThankYou":
                             strRet = "No problem, happy to help";
                             break;
+                        case "Complain":
+                            strRet = "I'm sorry, I'm doing my best. Try again, maybe?";
+                            break;
                         default:
-                            strRet = "I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
+                            strRet = "I'm sorry, but I'm not sure what you're asking me";
                             break;
                     }
                 }
@@ -87,14 +90,21 @@ namespace TheMakerShowBot
                 case "arduino":
                 case "arduino uno":
                 case "arduinouno":
+                case "ardiuno":
                     strRet = "Get started at http://arduino.cc. You should also watch The Maker Show Episode 1 - Blinking an LED... Now What?";
                     break;
                 case "raspberry pi":
+                case "raspberry":
                 case "raspberrypi":
+                case "pi":
+                case "pie":
                     strRet = "Get started at https://www.raspberrypi.org/. You should also watch The Maker Show Episode 5 - Installing Windows 10 on a Raspberry Pi 2";
                     break;
                 case "3d printing":
                 case "3d printer":
+                case "printers":
+                case "3d printers":
+                case "printing":
                     strRet = "You should watch The Maker Show Episode 4 - Building and Printing a 3D Model to Fit a Real Component";
                     break;
                 case "soldering":
@@ -104,9 +114,11 @@ namespace TheMakerShowBot
                 case "windows 10 iot core":
                 case "windows iot":
                 case "windows iot core":
+                case "iot core":
                     strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
                     break;
                 case "photon":
+                case "photo":
                 case "particle photon":
                 case "particle":
                 case "electron":
@@ -123,6 +135,7 @@ namespace TheMakerShowBot
                     break;
                 case "tessel":
                 case "tessel 2":
+                case "texel":
                     strRet = "Get started at https://www.tessel.io/. You should also watch The Maker Show Episode 18 - Easy IoT with the Tessel 2";
                     break;
                 case "esp8266":
@@ -131,8 +144,16 @@ namespace TheMakerShowBot
                 case "alljoyn":
                     strRet = "get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
                     break;
+                case "hololens":
+                case "windows holographic":
+                case "windowsholographic":
+                case "holographic":
+                case "holo lens":
+                case "holograms":
+                    strRet = "get started at https://dev.windows.com/holographic to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
+                    break;
                 default:
-                    strRet = "I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
+                    strRet = "I'm sorry. I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
                     break;
             }
 
@@ -143,16 +164,21 @@ namespace TheMakerShowBot
         private string GetStore(string strTech)
         {
             string strRet = string.Empty;
+            bool isMaker = true;
 
             switch (strTech.ToLower())
             {
                 case "arduino":
                 case "arduino uno":
                 case "arduinouno":
+                case "ardiuno":
                     strRet = "Get started at http://arduino.cc.";
                     break;
                 case "raspberry pi":
+                case "raspberry":
                 case "raspberrypi":
+                case "pi":
+                case "pie":
                     strRet = "Get started at https://www.raspberrypi.org/.";
                     break;
                 //case "3d printing":
@@ -169,6 +195,7 @@ namespace TheMakerShowBot
                 //    strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
                 //    break;
                 case "photon":
+                case "photo":
                 case "particle photon":
                 case "particle":
                 case "electron":
@@ -185,6 +212,7 @@ namespace TheMakerShowBot
                 //    break;
                 case "tessel":
                 case "tessel 2":
+                case "texel":
                     strRet = "Get started at https://www.tessel.io/.";
                     break;
                 case "esp8266":
@@ -193,12 +221,23 @@ namespace TheMakerShowBot
                 //case "alljoyn":
                 //    strRet = "get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
                 //    break;
+                case "hololens":
+                case "windows holographic":
+                case "windowsholographic":
+                case "holographic":
+                case "holo lens":
+                case "holograms":
+                    strRet = "get started at https://hololens.com/ to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
+                    break;
                 default:
                     strRet = "I don't have a specific recommendation for this.";
                     break;
             }
 
-            strRet += " I also recommend checking out http://sparkfun.com and http://adafruit.com for all sorts of maker & electronics stuff.";
+            if (isMaker)
+            {
+                strRet += " I also recommend checking out http://sparkfun.com and http://adafruit.com for all sorts of maker & electronics stuff.";
+            }
 
             return strRet;
         }
