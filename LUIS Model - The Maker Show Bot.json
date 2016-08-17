@@ -1583,6 +1583,211 @@
       "text": "screw you",
       "intent": "Complain",
       "entities": []
+    },
+    {
+      "text": "is this working?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "on what website could i buy an arduino?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "where can i buy an udoo?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what site can sell me a beaglebone board",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what time is it?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how much for an arduino?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "well i don't know what it's called",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you want a great time check it",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "you guys",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ok so can i speak in its not about it ok alright so you can see i see my in my butt right here",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i learn the arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "be more minutes to wrap up your absence",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "so now she's gonna screw up by",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "so what can i ask you",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "thank you very helpful",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "anyway",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i learn the hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "that's not what i asked",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "stupid bot doesn't understand me",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "where on the web could i purchase an udoo",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "what are the commands?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "how can i build with the hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "learn",
+      "intent": "LearnTopic",
+      "entities": []
+    },
+    {
+      "text": "how can i learn about the hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "where can i buy a hololens",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "do you think",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "very cool thanks",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "thank you you been very helpful",
+      "intent": "ThankYou",
+      "entities": []
     }
   ]
 }
