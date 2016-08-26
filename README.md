@@ -9,6 +9,7 @@ The bot supports a few intents, queryable via natural language, such as:
 - Buy Hardware: e.g. Where can I buy a Raspberry Pi?
 - Greeting: e.g. Hi there!
 - Help: e.g. What can I say?
+- Complain: e.g. That's not what I asked for!
 - ThankYou: e.g. Thanks, that was helpful!
  
 The live version of this bot is hosted in Azure App Services at http://themakershowbot.azurewebsites.net. The bot is already live (though not yet visibly published) via Facebook Messenger and Skype. I also created a holographic app in Unity for the [Microsoft HoloLens](http://hololens.com) that can talk with this bot: [HoloBot](https://github.com/ActiveNick/HoloBot).
