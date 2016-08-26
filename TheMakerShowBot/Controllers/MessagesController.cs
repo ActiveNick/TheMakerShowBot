@@ -142,7 +142,20 @@ namespace TheMakerShowBot
                     strRet = "Get started at https://espressif.com/. You also should watch The Maker Show: Episode 16 - The Miniscule ESP8266";
                     break;
                 case "alljoyn":
-                    strRet = "get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
+                    strRet = "Get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
+                    break;
+                case "edison":
+                case "intel edison":
+                case "inteledison":
+                    strRet = "Get started at http://www.intel.com/edison.";
+                    break;
+                case "coin acceptor":
+                case "coinacceptor":
+                    strRet = "You should watch The Maker Show: Episode 10 - Adding a Coin Acceptor to Your Arduino Project";
+                    break;
+                case "neopixel":
+                case "neopixels":
+                    strRet = "Get started at https://www.adafruit.com/category/168. You should watch The Maker Show: Mini - How to use NeoPixels";
                     break;
                 case "hololens":
                 case "windows holographic":
@@ -150,7 +163,7 @@ namespace TheMakerShowBot
                 case "holographic":
                 case "holo lens":
                 case "holograms":
-                    strRet = "get started at https://dev.windows.com/holographic to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
+                    strRet = "Get started at https://dev.windows.com/holographic to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
                     break;
                 default:
                     strRet = "I'm sorry. I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
@@ -219,15 +232,26 @@ namespace TheMakerShowBot
                     strRet = "Get started at https://espressif.com/.";
                     break;
                 //case "alljoyn":
-                //    strRet = "get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
+                //    strRet = "Get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
                 //    break;
+                case "edison":
+                case "intel edison":
+                case "inteledison":
+                    strRet = "Get started at http://www.intel.com/edison.";
+                    break;
+                case "neopixel":
+                case "neopixels":
+                    strRet = "NeoPixels are made and sold exclusively at http://adafruit.com";
+                    isMaker = false;
+                    break;
                 case "hololens":
                 case "windows holographic":
                 case "windowsholographic":
                 case "holographic":
                 case "holo lens":
                 case "holograms":
-                    strRet = "get started at https://hololens.com/ to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
+                    strRet = "Get started at https://hololens.com/ to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
+                    isMaker = false;
                     break;
                 default:
                     strRet = "I don't have a specific recommendation for this.";

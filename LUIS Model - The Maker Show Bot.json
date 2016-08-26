@@ -47,7 +47,7 @@
     {
       "name": "HardwareTypes",
       "mode": true,
-      "words": "Arduino,Arduino Uno,Raspberry Pi,RaspberryPi,Netduino,Edison,Intel Edison,Particle Photon,Photon,Electron,Particle Electron,LightBlue Bean,Tessel,ESP8266,SignalR,Alljoyn,LillyPad,Galileo,Genuino,Arduino Yun,Arduino Mega,Arduino 101,Arduino Pro,Arduino Mini,Arduino Micro,Arduino Gemma,Arduino Zero,HoloLens,Windows Holographic",
+      "words": "Arduino,Arduino Uno,Raspberry Pi,RaspberryPi,Netduino,Edison,Intel Edison,Particle Photon,Photon,Electron,Particle Electron,LightBlue Bean,Tessel,ESP8266,SignalR,Alljoyn,LillyPad,Galileo,Genuino,Arduino Yun,Arduino Mega,Arduino 101,Arduino Pro,Arduino Mini,Arduino Micro,Arduino Gemma,Arduino Zero,HoloLens,Windows Holographic,Coin acceptor,Neopixels",
       "activated": true
     }
   ],
@@ -1788,6 +1788,61 @@
       "text": "thank you you been very helpful",
       "intent": "ThankYou",
       "entities": []
+    },
+    {
+      "text": "where can i buy some neopixels?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how can i learn to program with windows holographic?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "is there a site that sells the edison?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how can i build something with neopixels?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how can i add a coin acceptor to a hack?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
     }
   ]
 }

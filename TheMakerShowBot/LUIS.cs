@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 
 namespace TheMakerShowBot
 {
+    // Generic class used to parse user messages with LUIS from Microsoft Cognitive Services
     public class LUISMakerShowClient
     {
         public static async Task<MakerLUIS> ParseUserInput(string strInput)
@@ -17,6 +18,7 @@ namespace TheMakerShowBot
 
             using (var client = new HttpClient())
             {
+                // TO DO: Replace the application ID and the subscription key with the one from your own account since I probably changed mine since posting this
                 string uri = "https://api.projectoxford.ai/luis/v1/application?id=e86d239e-7bd2-40ac-8881-03fbd8aa0d29&subscription-key=26e9e3fec3904829983742aa809770e6&q=" + strEscaped;
                 HttpResponseMessage msg = await client.GetAsync(uri);
 
