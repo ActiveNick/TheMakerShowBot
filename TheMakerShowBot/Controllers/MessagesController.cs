@@ -42,6 +42,9 @@ namespace TheMakerShowBot
                         case "BuyHardware":
                             strRet = mkLuis.entities.Count() > 0 ? GetStore(mkLuis.entities[0].entity) : "";
                             break;
+                        case "WhoIs":
+                            strRet = mkLuis.entities.Count() > 0 ? GetPerson(mkLuis.entities[0].entity) : "";
+                            break;
                         case "Greeting":
                             strRet = "Hi! I'm the Maker Show Bot and I'm here to help you become a maker";
                             break;
@@ -261,6 +264,50 @@ namespace TheMakerShowBot
             if (isMaker)
             {
                 strRet += " I also recommend checking out http://sparkfun.com and http://adafruit.com for all sorts of maker & electronics stuff.";
+            }
+
+            return strRet;
+        }
+
+        private string GetPerson(string strName)
+        {
+            string strRet = string.Empty;
+            strName = strName.Replace(" ", "");
+
+            switch (strName.ToLower())
+            {
+                case "briansherwin":
+                case "sherwin":
+                    strRet = "Brian Sherwin is a Microsoft Technical Evangelist living in Columbus, Ohio.";
+                    break;
+                case "nicklandry":
+                case "landry":
+                    strRet = "Nick Landry is a Microsoft Technical Evangelist living in New Jersey";
+                    break;
+                case "jeremyfoster":
+                case "foster":
+                    strRet = "Jeremy Foster is a Microsoft Technical Evangelist living in Seattle, Washington";
+                    break;
+                case "bretstateham":
+                case "stateham":
+                    strRet = "Bret Stateham is a Microsoft Technical Evangelist living in San Diego";
+                    break;
+                case "staceymulcahy":
+                case "mulcahy":
+                    strRet = "Stacey Mulcahy is a Program Manager for the Microsoft Garage in Vancouver, British Columbia";
+                    break;
+                case "rachelweil":
+                case "weil":
+                    strRet = "Rachel Weil is a Microsoft Technical Evangelist living in Austin, texas";
+                    break;
+                case "pauldecarlo":
+                case "decarlo":
+                case "carlo":
+                    strRet = "Paul De Carlo is a Microsoft Technical Evangelist living in Houston, Texas";
+                    break;
+                default:
+                    strRet = "I don't have any information about " + strName + ".";
+                    break;
             }
 
             return strRet;
