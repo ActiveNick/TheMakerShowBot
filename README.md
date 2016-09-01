@@ -7,6 +7,7 @@ The bot is built in C# with [Visual Studio 2015](http://www.visualstudio.com) an
 The bot supports a few intents, queryable via natural language, such as:
 - Learn a Topic: e.g. How can I get started with Arduino?
 - Buy Hardware: e.g. Where can I buy a Raspberry Pi?
+- Who is: e.g. Who is Bret Stateham?
 - Greeting: e.g. Hi there!
 - Help: e.g. What can I say?
 - Complain: e.g. That's not what I asked for!
