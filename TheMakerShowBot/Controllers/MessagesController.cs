@@ -87,26 +87,25 @@ namespace TheMakerShowBot
             // TO DO: Replace this code with a proper fetch from a JSON file or data table
 
             string strRet = string.Empty;
+            strTech = strTech.Replace(" ", "");
 
             switch (strTech.ToLower())
             {
                 case "arduino":
-                case "arduino uno":
                 case "arduinouno":
                 case "ardiuno":
                     strRet = "Get started at http://arduino.cc. You should also watch The Maker Show Episode 1 - Blinking an LED... Now What?";
                     break;
-                case "raspberry pi":
                 case "raspberry":
                 case "raspberrypi":
                 case "pi":
                 case "pie":
                     strRet = "Get started at https://www.raspberrypi.org/. You should also watch The Maker Show Episode 5 - Installing Windows 10 on a Raspberry Pi 2";
                     break;
-                case "3d printing":
-                case "3d printer":
+                case "3dprinting":
+                case "3dprinter":
                 case "printers":
-                case "3d printers":
+                case "3dprinters":
                 case "printing":
                     strRet = "You should watch The Maker Show Episode 4 - Building and Printing a 3D Model to Fit a Real Component";
                     break;
@@ -114,30 +113,31 @@ namespace TheMakerShowBot
                 case "solder":
                     strRet = "You should watch The Maker Show Episode 6 - Soldering Basics";
                     break;
-                case "windows 10 iot core":
-                case "windows iot":
-                case "windows iot core":
-                case "iot core":
+                case "windows10iotcore":
+                case "windowsteniotcore":
+                case "windowsiot":
+                case "windowsiotcore":
+                case "iotcore":
                     strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
                     break;
                 case "photon":
                 case "photo":
-                case "particle photon":
+                case "particlephoton":
                 case "particle":
                 case "electron":
-                case "particle electron":
+                case "particleelectron":
                     strRet = "Get started at http://particle.io. You should also watch The Maker Show Episode 7 - The Photon Awakens";
                     break;
                 case "wearables":
                 case "lillypad":
                     strRet = "You should watch The Maker Show Episode 9 - An Introduction to Wearables";
                     break;
-                case "laser cutting":
-                case "laser cutter":
+                case "lasercutting":
+                case "lasercutter":
                     strRet = "You should watch The Maker Show: Mini - Learning how to Laser Cut";
                     break;
                 case "tessel":
-                case "tessel 2":
+                case "tessel2":
                 case "texel":
                     strRet = "Get started at https://www.tessel.io/. You should also watch The Maker Show Episode 18 - Easy IoT with the Tessel 2";
                     break;
@@ -148,11 +148,10 @@ namespace TheMakerShowBot
                     strRet = "Get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
                     break;
                 case "edison":
-                case "intel edison":
                 case "inteledison":
                     strRet = "Get started at http://www.intel.com/edison.";
                     break;
-                case "coin acceptor":
+                case "coinslot":
                 case "coinacceptor":
                     strRet = "You should watch The Maker Show: Episode 10 - Adding a Coin Acceptor to Your Arduino Project";
                     break;
@@ -161,7 +160,6 @@ namespace TheMakerShowBot
                     strRet = "Get started at https://www.adafruit.com/category/168. You should watch The Maker Show: Mini - How to use NeoPixels";
                     break;
                 case "hololens":
-                case "windows holographic":
                 case "windowsholographic":
                 case "holographic":
                 case "holo lens":
@@ -180,65 +178,42 @@ namespace TheMakerShowBot
         private string GetStore(string strTech)
         {
             string strRet = string.Empty;
+            strTech = strTech.Replace(" ", "");
             bool isMaker = true;
 
             switch (strTech.ToLower())
             {
                 case "arduino":
-                case "arduino uno":
                 case "arduinouno":
                 case "ardiuno":
                     strRet = "Get started at http://arduino.cc.";
                     break;
-                case "raspberry pi":
                 case "raspberry":
                 case "raspberrypi":
                 case "pi":
                 case "pie":
                     strRet = "Get started at https://www.raspberrypi.org/.";
                     break;
-                //case "3d printing":
-                //case "3d printer":
-                //    strRet = "You should watch The Maker Show Episode 4 - Building and Printing a 3D Model to Fit a Real Component";
-                //    break;
-                //case "soldering":
-                //case "solder":
-                //    strRet = "You should watch The Maker Show Episode 6 - Soldering Basics";
-                //    break;
-                //case "windows 10 iot core":
-                //case "windows iot":
-                //case "windows iot core":
-                //    strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
-                //    break;
                 case "photon":
                 case "photo":
-                case "particle photon":
+                case "particlephoton":
                 case "particle":
                 case "electron":
-                case "particle electron":
+                case "particleelectron":
                     strRet = "Get started at http://particle.io.";
                     break;
-                //case "wearables":
                 case "lillypad":
                     strRet = "Get started at http://arduino.cc.";
                     break;
-                //case "laser cutting":
-                //case "laser cutter":
-                //    strRet = "You should watch The Maker Show: Mini - Learning how to Laser Cut";
-                //    break;
                 case "tessel":
-                case "tessel 2":
+                case "tessel2":
                 case "texel":
                     strRet = "Get started at https://www.tessel.io/.";
                     break;
                 case "esp8266":
                     strRet = "Get started at https://espressif.com/.";
                     break;
-                //case "alljoyn":
-                //    strRet = "Get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
-                //    break;
                 case "edison":
-                case "intel edison":
                 case "inteledison":
                     strRet = "Get started at http://www.intel.com/edison.";
                     break;
@@ -248,7 +223,6 @@ namespace TheMakerShowBot
                     isMaker = false;
                     break;
                 case "hololens":
-                case "windows holographic":
                 case "windowsholographic":
                 case "holographic":
                 case "holo lens":
@@ -278,33 +252,70 @@ namespace TheMakerShowBot
             {
                 case "briansherwin":
                 case "sherwin":
-                    strRet = "Brian Sherwin is a Microsoft Technical Evangelist living in Columbus, Ohio.";
+                    strRet = "Brian Sherwin is a Microsoft Technical Evangelist based in Columbus, Ohio.";
                     break;
                 case "nicklandry":
                 case "landry":
-                    strRet = "Nick Landry is a Microsoft Technical Evangelist living in New Jersey";
+                    strRet = "Nick Landry is a Microsoft Technical Evangelist based in New York City.";
                     break;
                 case "jeremyfoster":
                 case "foster":
-                    strRet = "Jeremy Foster is a Microsoft Technical Evangelist living in Seattle, Washington";
+                    strRet = "Jeremy Foster is a Microsoft Technical Evangelist based in Seattle, Washington.";
                     break;
                 case "bretstateham":
                 case "stateham":
-                    strRet = "Bret Stateham is a Microsoft Technical Evangelist living in San Diego";
+                    strRet = "Bret Stateham is a Microsoft Technical Evangelist based in San Diego.";
                     break;
                 case "staceymulcahy":
                 case "mulcahy":
-                    strRet = "Stacey Mulcahy is a Program Manager for the Microsoft Garage in Vancouver, British Columbia";
+                    strRet = "Stacey Mulcahy is a Program Manager for the Microsoft Garage in Vancouver, British Columbia.";
                     break;
                 case "rachelweil":
                 case "weil":
-                    strRet = "Rachel Weil is a Microsoft Technical Evangelist living in Austin, texas";
+                    strRet = "Rachel Weil is a Microsoft Technical Evangelist based in Austin, Texas.";
                     break;
                 case "pauldecarlo":
                 case "decarlo":
                 case "carlo":
-                    strRet = "Paul De Carlo is a Microsoft Technical Evangelist living in Houston, Texas";
+                    strRet = "Paul De Carlo is a Microsoft Technical Evangelist based in Houston, Texas.";
                     break;
+                case "davidwashington":
+                case "washington":
+                    strRet = "David Washington is a Director of Technical Evangelist at Microsoft in Minnesota.";
+                    break;
+                case "franklavigne":
+                case "lavigne":
+                case "vigne":
+                    strRet = "Frank La Vigne is a Microsoft Technical Evangelist based in Washington, DC.";
+                    break;
+                case "jamesmccaffrey":
+                case "mccaffrey":
+                    strRet = "James McCaffrey is a Senior Researcher  at Microsoft Research in Redmond, Washington.";
+                    break;
+                case "jaredbienz":
+                case "bienz":
+                    strRet = "Jared Bienz is a Microsoft Technical Evangelist based in Houston, Texas.";
+                    break;
+                case "nathanielrose":
+                case "rose":
+                    strRet = "Nathaniel Rose is a Microsoft Technical Evangelist based in San Francisco, California.";
+                    break;
+                case "kennyspade":
+                case "spade":
+                    strRet = "Kenny Spade is a Program Manager for the Microsoft Garage in Silicon Valley, California.";
+                    break;
+                case "davidcrook":
+                case "crook":
+                    strRet = "David Crook is a Microsoft Technical Evangelist based in Miami, Florida.";
+                    break;
+                case "samstokes":
+                case "stokes":
+                    strRet = "Sam Stokes is a former Microsoft Technical Evangelist now working on the Mars Habitat mission at UCLA in Southern California.";
+                    break;
+                //case "":
+                //case "":
+                //    strRet = " is a Microsoft Technical Evangelist based in .";
+                //    break;
                 default:
                     strRet = "I don't have any information about " + strName + ".";
                     break;
