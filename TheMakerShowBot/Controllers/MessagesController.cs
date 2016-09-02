@@ -80,7 +80,7 @@ namespace TheMakerShowBot
             return response;
         }
 
-        // We don;t need an async Task for now since nothing is awaited in this code
+        // We don't need an async Task for now since nothing is awaited in this code
         //private async Task<string> GetResource(string strTech)
         private string GetResource(string strTech)
         {
@@ -94,31 +94,68 @@ namespace TheMakerShowBot
                 case "arduino":
                 case "arduinouno":
                 case "ardiuno":
-                    strRet = "Get started at http://arduino.cc. You should also watch The Maker Show Episode 1 - Blinking an LED... Now What?";
+                    strRet = "Get started at http://arduino.cc. You should also watch The Maker Show Episode 1 - Blinking an LED... Now What? with Brian Sherwin.";
                     break;
                 case "raspberry":
                 case "raspberrypi":
                 case "pi":
                 case "pie":
-                    strRet = "Get started at https://www.raspberrypi.org/. You should also watch The Maker Show Episode 5 - Installing Windows 10 on a Raspberry Pi 2";
+                    strRet = "Get started at https://www.raspberrypi.org/. You should also watch The Maker Show Episode 5 - Installing Windows 10 on a Raspberry Pi, with Kenny Spade.";
                     break;
+                case "electricity":
+                case "electronics":
+                    strRet = "You should watch The Maker Show Episode 1 - Introduction to Electronics, with David Crook. You'll actually learn how to make electricity from lemons!";
+                    break;
+                case "motors":
+                case "motor":
+                    strRet = "Sam Stokes covered servo motors in The Maker Show Episode 3, and Bret Stateham covered stepper motors in episode 8.";
+                    break;
+                case "servomotors":
+                case "servomotor":
+                case "servo":
+                    strRet = "You should watch The Maker Show Episode 3 - Arduino and Servos, with Sam Stokes.";
+                    break;
+                case "steppermotors":
+                case "steppermotor":
+                case "stepper":
+                    strRet = "You should watch The Maker Show Episode 8 - Driving Your Stepper Motor with an Arduino, with Bret Stateham.";
+                    break;
+                case "print":
                 case "3dprinting":
                 case "3dprinter":
                 case "printers":
                 case "3dprinters":
                 case "printing":
-                    strRet = "You should watch The Maker Show Episode 4 - Building and Printing a 3D Model to Fit a Real Component";
+                    strRet = "You should watch The Maker Show Episode 4 - Building and Printing a 3D Model to Fit a Real Component, with Jeremy Foster.";
                     break;
                 case "soldering":
                 case "solder":
-                    strRet = "You should watch The Maker Show Episode 6 - Soldering Basics";
+                    strRet = "You should watch The Maker Show Episode 6 - Soldering Basics, with Frank La Vigne.";
+                    break;
+                case "arduinointerrupts":
+                case "interrupts":
+                case "electronicinterrupts":
+                case "codeinterrupts":
+                    strRet = "You should watch The Maker Show Episode 13 - Breaking Out of the Loop, with Jared Bienz.";
                     break;
                 case "windows10iotcore":
                 case "windowsteniotcore":
                 case "windowsiot":
                 case "windowsiotcore":
                 case "iotcore":
-                    strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core";
+                    strRet = "Get started at http://dev.windows.com/iot. You should also watch The Maker Show Episode 17 - Coding & GPIO in Windows 10 IoT Core, with Nick Landry.";
+                    break;
+                case "azure":
+                case "microsoftazure":
+                case "azureiot":
+                case "azureiothubs":
+                case "azureiothub":
+                case "microsoftazureiot":
+                case "azureiotsuite":
+                case "microsoftazureiotsuite":
+                case "microsoftazureiothubs":
+                case "microsoftazureiothub":
+                    strRet = "Get started at http://azure.com/iot. You should also watch The Maker Show Episode 12 - Connecting Particle Photon to CloudServices, with Paul DeCarlo. Bret Stateham also recorded a six-part series on the Particle Photon Weather Station with Azure.";
                     break;
                 case "photon":
                 case "photo":
@@ -126,48 +163,98 @@ namespace TheMakerShowBot
                 case "particle":
                 case "electron":
                 case "particleelectron":
-                    strRet = "Get started at http://particle.io. You should also watch The Maker Show Episode 7 - The Photon Awakens";
+                    strRet = "Get started at http://particle.io. You should also watch The Maker Show Episode 7 - The Photon Awakens, with Nick Landry.";
                     break;
                 case "wearables":
                 case "lillypad":
-                    strRet = "You should watch The Maker Show Episode 9 - An Introduction to Wearables";
+                    strRet = "You should watch The Maker Show Episode 9 - An Introduction to Wearables, with Stacey Mulcahy.";
                     break;
                 case "lasercutting":
                 case "lasercutter":
-                    strRet = "You should watch The Maker Show: Mini - Learning how to Laser Cut";
+                case "lasercutters":
+                    strRet = "You should watch The Maker Show Mini - Learning how to Laser Cut, with David Sheinkopf.";
                     break;
                 case "tessel":
                 case "tessel2":
                 case "texel":
-                    strRet = "Get started at https://www.tessel.io/. You should also watch The Maker Show Episode 18 - Easy IoT with the Tessel 2";
+                    strRet = "Get started at https://www.tessel.io/. You should also watch The Maker Show Episode 18 - Easy IoT with the Tessel 2, with Jeremy Foster.";
                     break;
                 case "esp8266":
-                    strRet = "Get started at https://espressif.com/. You also should watch The Maker Show: Episode 16 - The Miniscule ESP8266";
+                    strRet = "Get started at https://espressif.com/. You also should watch The Maker Show: Episode 16 - The Miniscule ESP8266, with Brian Sherwin.";
                     break;
                 case "alljoyn":
-                    strRet = "Get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks";
+                    strRet = "Get started at https://allseenalliance.org/. You should watch The Maker Show: Episode 11 - Getting Started with AllJoyn Proximity Networks, with Nathaniel Rose.";
                     break;
                 case "edison":
                 case "inteledison":
-                    strRet = "Get started at http://www.intel.com/edison.";
+                    strRet = "Get started at http://www.intel.com/edison. You should also check out Jeremy Foster's blog at http://codefoster.com/edison.";
                     break;
                 case "coinslot":
                 case "coinacceptor":
-                    strRet = "You should watch The Maker Show: Episode 10 - Adding a Coin Acceptor to Your Arduino Project";
+                    strRet = "You should watch The Maker Show Episode 10 - Adding a Coin Acceptor to Your Arduino Project, with Rachel Weil.";
+                    break;
+                case "signalr":
+                case "signalare":
+                    strRet = "You should watch The Maker Show Episode 14 - SignalR with the Raspberry Pi, with Ian Philpot.";
                     break;
                 case "neopixel":
                 case "neopixels":
-                    strRet = "Get started at https://www.adafruit.com/category/168. You should watch The Maker Show: Mini - How to use NeoPixels";
+                    strRet = "Get started at https://www.adafruit.com/category/168. You should watch The Maker Show Mini - How to use NeoPixels, with Stacey Mulcahy.";
+                    break;
+                case "voltageregulators":
+                case "voltageregulator":
+                    strRet = "You should watch The Maker Show Episode 15 - Using Voltage Regulators to Power your Projects, with Bret Stateham.";
+                    break;
+                case "mechanicalcomputers":
+                case "mechanicalcomputer":
+                case "gravicomp":
+                    strRet = "You should watch The Maker Show Mini - GraviComp Mechanical Computer, with James McCaffrey.";
+                    break;
+                case "radio":
+                case "radiofromscratch":
+                case "amradio":
+                case "fmradio":
+                    strRet = "You should watch The Maker Show Episode 19 - A Radio from Scratch, with Jeremy Foster.";
+                    break;
+                case "bitcoin":
+                case "bitcoinsensor":
+                    strRet = "You should watch The Maker Show Mini - Bitcoin Sensor, with Paul DeCarlo.";
+                    break;
+                case "outside":
+                case "outdoor":
+                case "outdoors":
+                case "outsidehack":
+                case "outsidehacks":
+                case "outsidegadget":
+                case "outsidegadgets":
+                case "outsideelectronics":
+                case "outdoorhacks":
+                case "outdoorhack":
+                case "outdoorgadget":
+                case "outdoorgadgets":
+                case "outdoorelectronics":
+                case "":
+                    strRet = "You should watch The Maker Show Episode 20 - IoT in Extreme and Off-Grid Scenarios, with Frank La Vigne.";
+                    break;
+                case "automatedgarage":
+                case "garagedooropener":
+                case "internetconnectedgarage":
+                case "internet-connectedgarage":
+                case "garageapp":
+                case "garageapplication":
+                case "garagegadget":
+                case "garagegadgets":
+                    strRet = "You should watch The Maker Show Episode 21 - Building an iOS app for your Garage, with David Washington.";
                     break;
                 case "hololens":
                 case "windowsholographic":
                 case "holographic":
                 case "holo lens":
                 case "holograms":
-                    strRet = "Get started at https://dev.windows.com/holographic to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
+                    strRet = "Get started at https://dev.windows.com/holographic to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy.";
                     break;
                 default:
-                    strRet = "I'm sorry. I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io";
+                    strRet = "I'm sorry. I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io.";
                     break;
             }
 
@@ -225,7 +312,7 @@ namespace TheMakerShowBot
                 case "hololens":
                 case "windowsholographic":
                 case "holographic":
-                case "holo lens":
+                case "hollowlens":
                 case "holograms":
                     strRet = "Get started at https://hololens.com/ to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
                     isMaker = false;
@@ -311,6 +398,15 @@ namespace TheMakerShowBot
                 case "samstokes":
                 case "stokes":
                     strRet = "Sam Stokes is a former Microsoft Technical Evangelist now working on the Mars Habitat mission at UCLA in Southern California.";
+                    break;
+                case "davidsheinkopf":
+                case "davesheinkopf":
+                case "sheinkopf":
+                    strRet = "David Sheinkopf is an Electronics Teacher and the Director of Education at Pioneer Works Center for Art and Innovation in Brooklyn, New York.";
+                    break;
+                case "ianphilpot":
+                case "philpot":
+                    strRet = "Ian Philpot is a Microsoft Technical Evangelist based in Atlanta, Georgia.";
                     break;
                 //case "":
                 //case "":
