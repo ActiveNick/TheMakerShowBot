@@ -5,13 +5,19 @@
   "culture": "en-us",
   "intents": [
     {
-      "name": "WhoIs"
+      "name": "BuyHardware"
     },
     {
-      "name": "ThankYou"
+      "name": "Complain"
     },
     {
       "name": "Greeting"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "LearnTopic"
     },
     {
       "name": "None"
@@ -20,16 +26,10 @@
       "name": "Specs"
     },
     {
-      "name": "LearnTopic"
+      "name": "ThankYou"
     },
     {
-      "name": "Complain"
-    },
-    {
-      "name": "BuyHardware"
-    },
-    {
-      "name": "Help"
+      "name": "WhoIs"
     }
   ],
   "entities": [
@@ -2190,6 +2190,444 @@
           "endPos": 4
         }
       ]
+    },
+    {
+      "text": "nice who is kenny's paid",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how would you help me ?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "where can i lern about the photon?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "凯哥",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "你好",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "who is rachel way home",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about the voltage regulators",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "where can i learn how to build an automated garage",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about the lily pad",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about 3d printing",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "ok i will thank you you been helpful",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "how can i learn about using a coin acceptor",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "and who is this nick landry",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "really who is brian sherwin",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "very cool so how can i learn about our do we know",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "ping",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how would you help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "ok thanks anyways",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "who is kenny spade",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about our do we know",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "why buy a photo",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "you know you're useless",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "who's jeremy foster?",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how can i build with stepper motors",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i said where do i buy a photo in",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "wow very cool thank you",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "so how can i learn about our do we know",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "who is jeremy foster",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what's up?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how can i learn about garage",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "ok so how do i learn the raspberry pie",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about wearables",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "who is frank lavigna",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who's this bret stateham?",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "that's very cool so where can i buy an arduino",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 11,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about azure",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about the raspberry pie",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what can i ask you?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "so how can i build something with an arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how can i build with motors",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "who are you?",
+      "intent": "WhoIs",
+      "entities": []
+    },
+    {
+      "text": "how can i build something with arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about the motors",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "so who are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "ok thanks",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "how can i learn about the particle photon",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "so how do i learn the particle fogtown",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "cool, what can i build?",
+      "intent": "Help",
+      "entities": []
     }
   ]
 }

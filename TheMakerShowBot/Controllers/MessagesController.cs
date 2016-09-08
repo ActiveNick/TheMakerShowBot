@@ -94,10 +94,12 @@ namespace TheMakerShowBot
                 case "arduino":
                 case "arduinouno":
                 case "ardiuno":
+                case "ourdoweknow":
                     strRet = "Get started at http://arduino.cc. You should also watch The Maker Show Episode 1 - Blinking an LED... Now What? with Brian Sherwin.";
                     break;
                 case "raspberry":
                 case "raspberrypi":
+                case "raspberrypie":
                 case "pi":
                 case "pie":
                     strRet = "Get started at https://www.raspberrypi.org/. You should also watch The Maker Show Episode 5 - Installing Windows 10 on a Raspberry Pi, with Kenny Spade.";
@@ -122,6 +124,7 @@ namespace TheMakerShowBot
                     break;
                 case "print":
                 case "3dprinting":
+                case "3d":
                 case "3dprinter":
                 case "printers":
                 case "3dprinters":
@@ -159,24 +162,35 @@ namespace TheMakerShowBot
                     break;
                 case "photon":
                 case "photo":
+                case "photoin":
                 case "particlephoton":
                 case "particle":
+                case "fogtown":
+                case "particlefogtown":
                 case "electron":
                 case "particleelectron":
                     strRet = "Get started at http://particle.io. You should also watch The Maker Show Episode 7 - The Photon Awakens, with Nick Landry.";
                     break;
                 case "wearables":
                 case "lillypad":
+                case "lily":
+                case "lilly":
                     strRet = "You should watch The Maker Show Episode 9 - An Introduction to Wearables, with Stacey Mulcahy.";
                     break;
                 case "lasercutting":
                 case "lasercutter":
+                case "laser":
+                case "cutting":
+                case "cutter":
                 case "lasercutters":
                     strRet = "You should watch The Maker Show Mini - Learning how to Laser Cut, with David Sheinkopf.";
                     break;
                 case "tessel":
+                case "tesseltwo":
                 case "tessel2":
                 case "texel":
+                case "texeltwo":
+                case "texel2":
                     strRet = "Get started at https://www.tessel.io/. You should also watch The Maker Show Episode 18 - Easy IoT with the Tessel 2, with Jeremy Foster.";
                     break;
                 case "esp8266":
@@ -202,6 +216,7 @@ namespace TheMakerShowBot
                     strRet = "Get started at https://www.adafruit.com/category/168. You should watch The Maker Show Mini - How to use NeoPixels, with Stacey Mulcahy.";
                     break;
                 case "voltageregulators":
+                case "regulators":
                 case "voltageregulator":
                     strRet = "You should watch The Maker Show Episode 15 - Using Voltage Regulators to Power your Projects, with Bret Stateham.";
                     break;
@@ -236,6 +251,7 @@ namespace TheMakerShowBot
                 case "":
                     strRet = "You should watch The Maker Show Episode 20 - IoT in Extreme and Off-Grid Scenarios, with Frank La Vigne.";
                     break;
+                case "garage":
                 case "automatedgarage":
                 case "garagedooropener":
                 case "internetconnectedgarage":
@@ -273,18 +289,23 @@ namespace TheMakerShowBot
                 case "arduino":
                 case "arduinouno":
                 case "ardiuno":
+                case "ourdoweknow":
                     strRet = "Get started at http://arduino.cc.";
                     break;
                 case "raspberry":
                 case "raspberrypi":
+                case "raspberrypie":
                 case "pi":
                 case "pie":
                     strRet = "Get started at https://www.raspberrypi.org/.";
                     break;
                 case "photon":
                 case "photo":
+                case "photoin":
                 case "particlephoton":
                 case "particle":
+                case "fogtown":
+                case "particlefogtown":
                 case "electron":
                 case "particleelectron":
                     strRet = "Get started at http://particle.io.";
@@ -358,6 +379,8 @@ namespace TheMakerShowBot
                     strRet = "Stacey Mulcahy is a Program Manager for the Microsoft Garage in Vancouver, British Columbia.";
                     break;
                 case "rachelweil":
+                case "rachelveil":
+                case "rachel":
                 case "weil":
                     strRet = "Rachel Weil is a Microsoft Technical Evangelist based in Austin, Texas.";
                     break;
@@ -371,6 +394,8 @@ namespace TheMakerShowBot
                     strRet = "David Washington is a Director of Technical Evangelist at Microsoft in Minnesota.";
                     break;
                 case "franklavigne":
+                case "franklavigna":
+                case "lavigna":
                 case "lavigne":
                 case "vigne":
                     strRet = "Frank La Vigne is a Microsoft Technical Evangelist based in Washington, DC.";
@@ -387,6 +412,8 @@ namespace TheMakerShowBot
                 case "rose":
                     strRet = "Nathaniel Rose is a Microsoft Technical Evangelist based in San Francisco, California.";
                     break;
+                case "kenny":
+                case "kenny'spaid":
                 case "kennyspade":
                 case "spade":
                     strRet = "Kenny Spade is a Program Manager for the Microsoft Garage in Silicon Valley, California.";
