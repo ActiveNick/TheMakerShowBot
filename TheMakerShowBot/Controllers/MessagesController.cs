@@ -95,6 +95,7 @@ namespace TheMakerShowBot
                 case "arduinouno":
                 case "ardiuno":
                 case "ourdoweknow":
+                case "ordoweknow":
                     strRet = "Get started at http://arduino.cc. You should also watch The Maker Show Episode 1 - Blinking an LED... Now What? with Brian Sherwin.";
                     break;
                 case "raspberry":
@@ -290,6 +291,7 @@ namespace TheMakerShowBot
                 case "arduinouno":
                 case "ardiuno":
                 case "ourdoweknow":
+                case "ordoweknow":
                     strRet = "Get started at http://arduino.cc.";
                     break;
                 case "raspberry":
@@ -371,16 +373,30 @@ namespace TheMakerShowBot
                     strRet = "Jeremy Foster is a Microsoft Technical Evangelist based in Seattle, Washington.";
                     break;
                 case "bretstateham":
+                case "bretstatehim":
+                case "bretstate":
+                case "brettstateham":
+                case "brettstatehim":
+                case "brettstate":
                 case "stateham":
+                case "bret":
+                case "brett":
+                case "bretstadium":
+                case "brettstadium":
                     strRet = "Bret Stateham is a Microsoft Technical Evangelist based in San Diego.";
                     break;
                 case "staceymulcahy":
+                case "stacymulcahy":
+                case "stacey":
+                case "stacy":
                 case "mulcahy":
                     strRet = "Stacey Mulcahy is a Program Manager for the Microsoft Garage in Vancouver, British Columbia.";
                     break;
                 case "rachelweil":
                 case "rachelveil":
                 case "rachel":
+                case "rachelwhile":
+                case "while":
                 case "weil":
                     strRet = "Rachel Weil is a Microsoft Technical Evangelist based in Austin, Texas.";
                     break;
@@ -440,7 +456,7 @@ namespace TheMakerShowBot
                 //    strRet = " is a Microsoft Technical Evangelist based in .";
                 //    break;
                 default:
-                    strRet = "I don't have any information about " + strName + ".";
+                    strRet = "I'm sorry. I don't have any information about " + strName + ".";
                     break;
             }
 

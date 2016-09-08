@@ -2628,6 +2628,116 @@
       "text": "cool, what can i build?",
       "intent": "Help",
       "entities": []
+    },
+    {
+      "text": "how can i learn about using the voltage regulators",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "so how can i learn about the or do we know",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "how can i learn about stepper motors",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "who is brett state him",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "and who is brett stadium",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "who is paul decarlo",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who is rachel while",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who is stacy mulcahy",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who is david washington",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "who is james mccaffrey",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
     }
   ]
 }
