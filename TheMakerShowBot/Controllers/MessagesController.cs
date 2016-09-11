@@ -22,11 +22,6 @@ namespace TheMakerShowBot
             ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
             if (activity.Type == ActivityTypes.Message)
             {               
-                // This is the reply from the original template code, kept here for reference
-                // int length = (activity.Text ?? string.Empty).Length;
-                // Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-                // await connector.Conversations.ReplyToActivityAsync(reply);
-
                 // Parse the user's meaning via Language Understanding (LUIS) in Cognitive Services
                 MakerLUIS mkLuis = await LUISMakerShowClient.ParseUserInput(activity.Text);
                 string strRet = string.Empty;
@@ -87,8 +82,10 @@ namespace TheMakerShowBot
             // TO DO: Replace this code with a proper fetch from a JSON file or data table
 
             string strRet = string.Empty;
-            strTech = strTech.Replace(" ", "");
+            strTech = strTech.Replace(" ", ""); // Remove all spaces to make it easier to parse the parameters
 
+            // The switch includes a lot of misspellings to account for common errors that can occur when
+            // dealing with input coming from Speech Recognition with Open Dictation.
             switch (strTech.ToLower())
             {
                 case "arduino":
@@ -266,7 +263,8 @@ namespace TheMakerShowBot
                 case "hololens":
                 case "windowsholographic":
                 case "holographic":
-                case "holo lens":
+                case "hollowlens":
+                case "wholeolins":
                 case "holograms":
                     strRet = "Get started at https://dev.windows.com/holographic to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy.";
                     break;
@@ -282,9 +280,11 @@ namespace TheMakerShowBot
         private string GetStore(string strTech)
         {
             string strRet = string.Empty;
-            strTech = strTech.Replace(" ", "");
+            strTech = strTech.Replace(" ", ""); // Remove all spaces to make it easier to parse the parameters
             bool isMaker = true;
 
+            // The switch includes a lot of misspellings to account for common errors that can occur when
+            // dealing with input coming from Speech Recognition with Open Dictation.
             switch (strTech.ToLower())
             {
                 case "arduino":
@@ -336,6 +336,7 @@ namespace TheMakerShowBot
                 case "windowsholographic":
                 case "holographic":
                 case "hollowlens":
+                case "wholeolins":
                 case "holograms":
                     strRet = "Get started at https://hololens.com/ to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy";
                     isMaker = false;
@@ -356,8 +357,10 @@ namespace TheMakerShowBot
         private string GetPerson(string strName)
         {
             string strRet = string.Empty;
-            strName = strName.Replace(" ", "");
+            strName = strName.Replace(" ", ""); // Remove all spaces to make it easier to parse the parameters
 
+            // The switch includes a lot of misspellings to account for common errors that can occur when
+            // dealing with input coming from Speech Recognition with Open Dictation.
             switch (strName.ToLower())
             {
                 case "briansherwin":
@@ -451,10 +454,6 @@ namespace TheMakerShowBot
                 case "philpot":
                     strRet = "Ian Philpot is a Microsoft Technical Evangelist based in Atlanta, Georgia.";
                     break;
-                //case "":
-                //case "":
-                //    strRet = " is a Microsoft Technical Evangelist based in .";
-                //    break;
                 default:
                     strRet = "I'm sorry. I don't have any information about " + strName + ".";
                     break;
@@ -467,7 +466,7 @@ namespace TheMakerShowBot
         {
             if (activity.Type == ActivityTypes.Ping)
             {
-                
+                // Check if service is alive
             }
             else if (activity.Type == ActivityTypes.DeleteUserData)
             {
