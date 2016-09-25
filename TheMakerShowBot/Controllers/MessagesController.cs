@@ -162,6 +162,7 @@ namespace TheMakerShowBot
                 case "photo":
                 case "photoin":
                 case "particlephoton":
+                case "particlefulton":
                 case "particle":
                 case "fogtown":
                 case "particlefogtown":
@@ -305,6 +306,7 @@ namespace TheMakerShowBot
                 case "photo":
                 case "photoin":
                 case "particlephoton":
+                case "particlefulton":
                 case "particle":
                 case "fogtown":
                 case "particlefogtown":
@@ -364,10 +366,12 @@ namespace TheMakerShowBot
             switch (strName.ToLower())
             {
                 case "briansherwin":
+                case "brianshwerwin":
                 case "sherwin":
                     strRet = "Brian Sherwin is a Microsoft Technical Evangelist based in Columbus, Ohio.";
                     break;
                 case "nicklandry":
+                case "nicklaundry":
                 case "landry":
                     strRet = "Nick Landry is a Microsoft Technical Evangelist based in New York City.";
                     break;
