@@ -52,6 +52,16 @@ namespace TheMakerShowBot
                         case "Complain":
                             strRet = "I'm sorry, I'm doing my best. Try again, maybe?";
                             break;
+                        case "Compare":
+                            // TO DO: Ths is a new intent added during a live talk at VSLive.
+                            // I need to come back and provide a proper reply build-out here.
+                            if (mkLuis.entities.Count() >= 2)
+                            {
+                                string board1 = mkLuis.entities[0].entity;
+                                string board2 = mkLuis.entities[1].entity;
+                                strRet = $"Sorry, I don't really know exactly the differences between {board1} and {board2}";
+                            }
+                            break;
                         default:
                             strRet = "I'm sorry, but I'm not sure what you're asking me";
                             break;

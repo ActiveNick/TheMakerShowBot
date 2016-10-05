@@ -8,6 +8,9 @@
       "name": "BuyHardware"
     },
     {
+      "name": "Compare"
+    },
+    {
       "name": "Complain"
     },
     {
@@ -3198,6 +3201,238 @@
       "text": "and when can i ask you exactly",
       "intent": "Help",
       "entities": []
+    },
+    {
+      "text": "how can i learn about arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i hate you",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "what is the difference between an arduino and raspberry pi?",
+      "intent": "Compare",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "what is best between the photon and esp8266?",
+      "intent": "Compare",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "should i buy a tessel 2 or an edison?",
+      "intent": "Compare",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 5
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "is the new joule better than the edison?",
+      "intent": "Compare",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the diff between the photon and the electron?",
+      "intent": "Compare",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 10,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "what is a cell phone",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how can i get started with arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "learn to pick",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "laundry i need to put that",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "and who is brian sherwin exactly?",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "learn topic",
+      "intent": "LearnTopic",
+      "entities": []
+    },
+    {
+      "text": "yeah yeah i'm about city right now it's right it's right there",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "unity",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "follow me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "search some imodium",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "great cool thank you you been very helpful",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "00 yeah it says it on the front",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "microsoft visual studio",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "this isn't working",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "here's a great stadium",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "who is nick landry",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i dislike don't know like what magic words you want me to ask you",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "ok, let me see, how can i get started with arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 12,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "yeah",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i get started with our do we know",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 9
+        }
+      ]
     }
   ]
 }
