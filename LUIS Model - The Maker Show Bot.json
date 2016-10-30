@@ -63,755 +63,23 @@
   "regex_features": [],
   "utterances": [
     {
-      "text": "how do i start with the particle photon?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "how do i build gadgets with the photon?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "do you have shows on the arduinouno?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "how do i get started with the lightbluebean",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "what is the intel edison?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "i want to learn about the raspberry pi",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "how do i get started with arduino",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "do you have videos on the raspberrypi?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "where can i buy a raspberry pi?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "where do you buy an arduino?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "i want to purchase a particle photon",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "where can i acquire an electron?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "do you know a website to buy an intel edison?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 8,
-          "endPos": 8
-        },
-        {
-          "entity": "HardwareType",
-          "startPos": 9,
-          "endPos": 9
-        }
-      ]
-    },
-    {
-      "text": "i want to learn netduino",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "i want to learn arduino",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "how do i learn arduino",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "did you cover the particle photon?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "where can i buy a photon?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "is there a site to obtain an arduino?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "which website to buy a raspberry pi kit?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "is there a tutorial on the udoo",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "do you have info on the yun?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "i want to learn edison",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "how can i learn how to use the lilypad?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 8,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "hello there",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "hello",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "hi",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "hi there",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "hi, how are you?",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "hello, howya doin'?",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "hey how would i learn all this arduino stuff?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "how can i learn the intel edison",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        },
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "do you have episodes about the tessel 2?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "how can i get started on a raspberry pi?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "how can i learn arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "how can i get started with the tessel 2?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "test",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "how to i learn about arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "where do i buy a particle photon?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "howe can i learn about arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "how are you?",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "how can i build something with a tessel 2?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "i wanna start with the tessel",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "yo how's it going'?",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "yo how are you doing?",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "where do i learn about arduino",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "what can i build with an arduino yun?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        },
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "how can i get stasrted with arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "what can i say to you?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "help",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "what can you do?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "commands",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "what are the bot commands?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "help what are the different commands?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "how can i get started with arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
       "text": "what are the specs of the particle photon?",
       "intent": "Specs",
       "entities": []
     },
     {
-      "text": "what kind of processor is in an arduino uno?",
-      "intent": "Specs",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "how much memory is there in a raspberry pi?",
-      "intent": "Specs",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "what processor is built in the arduino yun?",
-      "intent": "Specs",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        },
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "what cpu architecture is in the raspberry pi 3?",
-      "intent": "Specs",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "what kind of cpu is in the arduino?",
-      "intent": "Specs",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "banana",
-      "intent": "None",
+      "text": "is this working?",
+      "intent": "Greeting",
       "entities": []
     },
     {
-      "text": "please good bot i would like to acquire an arduino",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 9,
-          "endPos": 9
-        }
-      ]
-    },
-    {
-      "text": "thanks!",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "thank you",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "ok, cool, thanks",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "that was great, thanks dude!",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "great, thanks again",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "cool, so then how do i get started with a raspberry pi, eh?",
+      "text": "nice. awesome. how can i get started building stuff with arduino?",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 11,
+          "startPos": 12,
           "endPos": 12
-        }
-      ]
-    },
-    {
-      "text": "how do i get started with arduino yun?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "cool! so how can i get started with a raspberry pi?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 10,
-          "endPos": 11
-        }
-      ]
-    },
-    {
-      "text": "what can i say?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "i want to buy hardware",
-      "intent": "BuyHardware",
-      "entities": []
-    },
-    {
-      "text": "cool, so what can i ask you?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "alright, i will. how do i buy a raspberry pi?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 10,
-          "endPos": 11
-        }
-      ]
-    },
-    {
-      "text": "ok, how do i learn all this arduino thingie",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 8,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "great, what are the commands?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "so what can i say then?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "ok, so how do ii got started with arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 9,
-          "endPos": 9
-        }
-      ]
-    },
-    {
-      "text": "so help me then",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "give me commands",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "i want to learn more about raspberrypi",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "alright, cool, so how can i learn to build stuff with arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 13,
-          "endPos": 13
         }
       ]
     },
@@ -827,8 +95,39 @@
       ]
     },
     {
-      "text": "how would one acquire a tessel 2?",
-      "intent": "BuyHardware",
+      "text": "that's not what i asked",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "how can i add a coin acceptor to a hack?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "learn",
+      "intent": "LearnTopic",
+      "entities": []
+    },
+    {
+      "text": "it doesn't understand me",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "go to try it",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i build with arduino?",
+      "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
@@ -838,7 +137,12 @@
       ]
     },
     {
-      "text": "i need to know more about raspberrypi",
+      "text": "he's right about your shoulder this one",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i build something with neopixels?",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -849,23 +153,49 @@
       ]
     },
     {
-      "text": "do you have videos on the raspberry pi?",
+      "text": "how can i get started with arduino?",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
           "startPos": 6,
-          "endPos": 7
+          "endPos": 6
         }
       ]
     },
     {
-      "text": "so what can i say",
+      "text": "nice, thanks",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "what are the commands?",
       "intent": "Help",
       "entities": []
     },
     {
-      "text": "neeto, where can i buy an arduino?",
+      "text": "nice, awesome, i want to learn about raspberry pi",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 9,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "let me love you stop",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "this is perfect for trying",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is there a site that sells the edison?",
       "intent": "BuyHardware",
       "entities": [
         {
@@ -876,182 +206,97 @@
       ]
     },
     {
-      "text": "cool, so what can i say?",
+      "text": "anyway",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "test",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "help what are the different commands?",
       "intent": "Help",
       "entities": []
     },
     {
-      "text": "what about learning the intel edison?",
+      "text": "i want to learn more about raspberrypi",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 5
+          "startPos": 6,
+          "endPos": 6
         }
       ]
     },
     {
-      "text": "comment puis-je apprendre arduino?",
-      "intent": "LearnTopic",
+      "text": "how's it going",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "it's going to ask about the rest",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "wow, that really cool. so where can i buy an arduino uno?",
+      "intent": "BuyHardware",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
+          "startPos": 12,
+          "endPos": 13
         }
       ]
     },
     {
-      "text": "nice, what about if i want to learn the raspberry pi?",
+      "text": "cool, so how do i get started with the tessel 2?",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
           "startPos": 10,
-          "endPos": 11
+          "endPos": 10
         }
       ]
     },
     {
-      "text": "yo how can james learn about particle photon",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "do you have info on the raspberry pi?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "i want to but an arduino",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "i want to know more about arduino",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "i want to buy specs",
-      "intent": "BuyHardware",
-      "entities": []
-    },
-    {
-      "text": "how do i get started with the intel edison",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 8,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "i need to buy an arduino",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "so how do i get started with the particle photon?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 8,
-          "endPos": 8
-        }
-      ]
-    },
-    {
-      "text": "so where can i buy a particle photon?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "how do i get started with ardiuno?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "how can i build games for the hololens?",
+      "text": "how can i learn to program with windows holographic?",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
           "startPos": 7,
-          "endPos": 7
+          "endPos": 8
         }
       ]
     },
     {
-      "text": "how can i learn all about windows holographic?",
+      "text": "give me commands",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "alright, cool, so how can i learn to build stuff with arduino?",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 7
+          "startPos": 13,
+          "endPos": 13
         }
       ]
     },
     {
-      "text": "i want to learn about raspberrypi",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
+      "text": "what can you do",
+      "intent": "Help",
+      "entities": []
     },
     {
-      "text": "where can i buy an arduino",
+      "text": "where can i buy some neopixels?",
       "intent": "BuyHardware",
       "entities": [
         {
@@ -1062,7 +307,73 @@
       ]
     },
     {
-      "text": "how do i get started with arduino?",
+      "text": "who is picking up it's picking up audio from all you guys he's trying to answer me tell me about the raspberry pie",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "i want to buy hardware",
+      "intent": "BuyHardware",
+      "entities": []
+    },
+    {
+      "text": "hey night let's see how was the video that i did um",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what can i say to you?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "is there a tutorial on the udoo",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what do you do",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "so help me then",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "thank you you been very helpful",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "hello there",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "learntopic",
+      "intent": "LearnTopic",
+      "entities": []
+    },
+    {
+      "text": "ok so",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i get stasrted with arduino?",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -1084,38 +395,175 @@
       ]
     },
     {
-      "text": "learntopic",
-      "intent": "LearnTopic",
-      "entities": []
-    },
-    {
-      "text": "cool, so how do i get started with the tessel 2?",
+      "text": "tell me how to use the photon",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 10,
-          "endPos": 10
+          "startPos": 6,
+          "endPos": 6
         }
       ]
     },
     {
-      "text": "let me love you stop",
+      "text": "tessile out",
       "intent": "None",
       "entities": []
     },
     {
-      "text": "go to try it",
+      "text": "what are the bot commands?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hi, how are you?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how do i get started with arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "very cool thanks",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "i'm actually improving the model right now",
       "intent": "None",
       "entities": []
     },
     {
-      "text": "he's right about your shoulder this one",
+      "text": "cool, so what can i say dude?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "ok, so how do ii got started with arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "what can i build with an arduino yun?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "hi there",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "banana",
       "intent": "None",
       "entities": []
     },
     {
-      "text": "where can i buy an arduino?",
+      "text": "did not answer that",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where do i learn about arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "ok there's a bite in turn away",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i learn about soldering",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "is there a site to obtain an arduino?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "so what can i say then?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "did you cover the particle photon?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what can you do?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "do you think",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "yo how's it going'?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "where can i buy a pi?",
       "intent": "BuyHardware",
       "entities": [
         {
@@ -1126,18 +574,18 @@
       ]
     },
     {
-      "text": "how can i learn raspberry pi",
-      "intent": "LearnTopic",
+      "text": "which website to buy a raspberry pi kit?",
+      "intent": "BuyHardware",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 5
+          "startPos": 5,
+          "endPos": 6
         }
       ]
     },
     {
-      "text": "so how can i build something with arduino",
+      "text": "how can i build games for the hololens?",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -1148,22 +596,131 @@
       ]
     },
     {
-      "text": "is f****** great pretty face",
-      "intent": "None",
+      "text": "oh cool, so what can i say to you?",
+      "intent": "Help",
       "entities": []
     },
     {
-      "text": "how there is",
-      "intent": "None",
+      "text": "where can i buy a photon?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "where can i buy a hololens",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "where on the web could i purchase an udoo",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how do i get started with a raspberry pie",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how do i get started with ardiuno?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i wanna start with the tessel",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "stupid bot doesn't understand me",
+      "intent": "Complain",
       "entities": []
     },
     {
-      "text": "nice, thanks",
-      "intent": "ThankYou",
+      "text": "commands",
+      "intent": "Help",
       "entities": []
     },
     {
-      "text": "so what if o want to learn the tessel 2?",
+      "text": "so where can i buy a particle photon?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how do i learn arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what can you do for me?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how can i learn the hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "you know i'll be honest with you this body is just like customer service um it's about as useful",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "ok, how do i learn all this arduino thingie",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -1174,18 +731,476 @@
       ]
     },
     {
-      "text": "so i know i know",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "tell me about arduino",
+      "text": "how can i learn all about windows holographic?",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 3,
-          "endPos": 3
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "great, what are the commands?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "so how would i then learn about building with arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "what can i say?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how can i learn about the hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i want to learn arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "alright, i will. how do i buy a raspberry pi?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 10,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "how can i build something with a tessel 2?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "so what can i ask you",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "thank you very helpful",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "you're not useful at all",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "yeah i said it",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "so how do i get started with the particle photon?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "cool, so what can i ask you?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i want to learn netduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "right",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "howe can i learn about arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "so now she's gonna screw up by",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'll be there yet",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ok now it's back i just stepped on it",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to buy an arduino",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "be more minutes to wrap up your absence",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where do i buy a particle photon?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "cool! so how can i get started with a raspberry pi?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 10,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "do you know a website to buy an intel edison?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 9,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "how can i learn the photo in",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how to i learn about arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "ok so can i speak in its not about it ok alright so you can see i see my in my butt right here",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "tell me about the texel",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "how can i build with the hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how can i learn arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "great, thanks again",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "wow it is working",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "nice, so what are the commands i can say?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how do i get started with the intel edison",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how are you?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "you guys",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "yo hi here bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how do i get started with arduino yun?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i am sorry but there's",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to buy specs",
+      "intent": "BuyHardware",
+      "entities": []
+    },
+    {
+      "text": "where can i acquire an electron?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how can i get started on a raspberry pi?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "what can i say",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how much for an arduino?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "that was great, thanks dude!",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "volume is really low",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ok, cool, thanks",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "well i don't know what it's called",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you want a great time check it",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to but an arduino",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i want to purchase a particle photon",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how can i learn the arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "is not happening anymore",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what time is it?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you have episodes about the tessel 2?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what site can sell me a beaglebone board",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "where can i buy a raspberry pi?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 6
         }
       ]
     },
@@ -1201,32 +1216,50 @@
       ]
     },
     {
-      "text": "is not happening anymore",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "i am sorry but there's",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "nice, so what are the commands i can say?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "ok now it's back i just stepped on it",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "how can i get started?",
+      "text": "do you have info on the raspberry pi?",
       "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "nice, help me",
+      "intent": "Help",
       "entities": []
     },
     {
-      "text": "how can i learn the photo in",
+      "text": "thanks",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "where can i buy an udoo?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "on what website could i buy an arduino?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how do i build an arduino hack?",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -1237,8 +1270,94 @@
       ]
     },
     {
-      "text": "so how would i then learn about building with arduino?",
+      "text": "how can i get started with the photo on",
       "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "nice, what about if i want to learn the raspberry pi?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 10,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "so how can i build something with arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how do i start with the particle photon?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "you're screwing my demo right now",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i learn the intel edison",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "so i know i know",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i build with our do we know",
+      "intent": "LearnTopic",
+      "entities": []
+    },
+    {
+      "text": "what about learning the intel edison?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "please good bot i would like to acquire an arduino",
+      "intent": "BuyHardware",
       "entities": [
         {
           "entity": "HardwareType",
@@ -1248,23 +1367,164 @@
       ]
     },
     {
-      "text": "oh cool, so what can i say to you?",
-      "intent": "Help",
+      "text": "how there is",
+      "intent": "None",
       "entities": []
     },
     {
-      "text": "what can you do",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "where can i buy a pi?",
+      "text": "where can i buy an arduino?",
       "intent": "BuyHardware",
       "entities": [
         {
           "entity": "HardwareType",
           "startPos": 5,
           "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "thank you",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "where do you buy an arduino?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i want to learn about raspberrypi",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "neeto, where can i buy an arduino?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what is the intel edison?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what kind of cpu is in the arduino?",
+      "intent": "Specs",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what processor is built in the arduino yun?",
+      "intent": "Specs",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how would one acquire a tessel 2?",
+      "intent": "BuyHardware",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "hello, howya doin'?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "do you have videos on the raspberry pi?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what kind of processor is in an arduino uno?",
+      "intent": "Specs",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "i want to learn edison",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "you don't understand me",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "how can i get started with the tessel 2?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
         }
       ]
     },
@@ -1280,33 +1540,7 @@
       ]
     },
     {
-      "text": "how can i learn about soldering",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "what can you do for me?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "did not answer that",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "cool, so what can i say dude?",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "tell me how to use the photon",
+      "text": "do you have videos on the raspberrypi?",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -1317,56 +1551,94 @@
       ]
     },
     {
-      "text": "hey night let's see how was the video that i did um",
-      "intent": "None",
+      "text": "nice, thank you very much",
+      "intent": "ThankYou",
       "entities": []
     },
     {
-      "text": "right",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "wow, that really cool. so where can i buy an arduino uno?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 12,
-          "endPos": 13
-        }
-      ]
-    },
-    {
-      "text": "nice, awesome, i want to learn about raspberry pi",
+      "text": "how do i get started with arduino",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 9,
-          "endPos": 10
+          "startPos": 6,
+          "endPos": 6
         }
       ]
     },
     {
-      "text": "how can i build with arduino?",
+      "text": "tell me about arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how do i build gadgets with the photon?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "cool, so then how do i get started with a raspberry pi, eh?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 11,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "you're useless",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "how can i get started with raspberry pi",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "thanks!",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "can you tell me how to use hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "comment puis-je apprendre arduino?",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
           "startPos": 5,
           "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "nice. awesome. how can i get started building stuff with arduino?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 12,
-          "endPos": 12
         }
       ]
     },
@@ -1382,33 +1654,7 @@
       ]
     },
     {
-      "text": "you're screwing my demo right now",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "can you tell me how to use hololens",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "how can i build with our do we know",
-      "intent": "LearnTopic",
-      "entities": []
-    },
-    {
-      "text": "nice, thank you very much",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "how can i get started with the photo on",
+      "text": "hey how would i learn all this arduino stuff?",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -1430,303 +1676,24 @@
       ]
     },
     {
-      "text": "nice, help me",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "how do i build an arduino hack?",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "volume is really low",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "ok so",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "yo hi here bot",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "what can i say",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "how's it going",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "wow it is working",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "how can i get started with raspberry pi",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "tell me about the texel",
+      "text": "how can i learn raspberry pi",
       "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
           "startPos": 4,
-          "endPos": 4
+          "endPos": 5
         }
       ]
     },
     {
-      "text": "i'll be there yet",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "you're not useful at all",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "you know i'll be honest with you this body is just like customer service um it's about as useful",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "how do i get started with a raspberry pie",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "please",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "yeah i said it",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "ok there's a bite in turn away",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "i'm actually improving the model right now",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "tessile out",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "who is picking up it's picking up audio from all you guys he's trying to answer me tell me about the raspberry pie",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "it's going to ask about the rest",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "this is perfect for trying",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "what do you do",
+      "text": "cool, so what can i say?",
       "intent": "Help",
       "entities": []
     },
     {
-      "text": "you're useless",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "it doesn't understand me",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "you don't understand me",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "that's not what i said",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "screw you",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "is this working?",
-      "intent": "Greeting",
-      "entities": []
-    },
-    {
-      "text": "on what website could i buy an arduino?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "where can i buy an udoo?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "what site can sell me a beaglebone board",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "what time is it?",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "how much for an arduino?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 4,
-          "endPos": 4
-        }
-      ]
-    },
-    {
-      "text": "well i don't know what it's called",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "do you want a great time check it",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "you guys",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "ok so can i speak in its not about it ok alright so you can see i see my in my butt right here",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "how can i learn the arduino",
+      "text": "so what if o want to learn the tessel 2?",
       "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "be more minutes to wrap up your absence",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "so now she's gonna screw up by",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "so what can i ask you",
-      "intent": "Help",
-      "entities": []
-    },
-    {
-      "text": "thank you very helpful",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "anyway",
-      "intent": "None",
-      "entities": []
-    },
-    {
-      "text": "how can i learn the hololens",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "that's not what i asked",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "stupid bot doesn't understand me",
-      "intent": "Complain",
-      "entities": []
-    },
-    {
-      "text": "where on the web could i purchase an udoo",
-      "intent": "BuyHardware",
       "entities": [
         {
           "entity": "HardwareType",
@@ -1736,82 +1703,73 @@
       ]
     },
     {
-      "text": "what are the commands?",
-      "intent": "Help",
+      "text": "screw you",
+      "intent": "Complain",
       "entities": []
     },
     {
-      "text": "thanks",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "how can i build with the hololens",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "learn",
-      "intent": "LearnTopic",
-      "entities": []
-    },
-    {
-      "text": "how can i learn about the hololens",
-      "intent": "LearnTopic",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 6,
-          "endPos": 6
-        }
-      ]
-    },
-    {
-      "text": "where can i buy a hololens",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
-        }
-      ]
-    },
-    {
-      "text": "do you think",
+      "text": "is f****** great pretty face",
       "intent": "None",
       "entities": []
     },
     {
-      "text": "very cool thanks",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "thank you you been very helpful",
-      "intent": "ThankYou",
-      "entities": []
-    },
-    {
-      "text": "where can i buy some neopixels?",
-      "intent": "BuyHardware",
+      "text": "yo how can james learn about particle photon",
+      "intent": "LearnTopic",
       "entities": [
         {
           "entity": "HardwareType",
-          "startPos": 5,
-          "endPos": 5
+          "startPos": 6,
+          "endPos": 6
         }
       ]
     },
     {
-      "text": "how can i learn to program with windows holographic?",
+      "text": "i want to know more about arduino",
       "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "do you have shows on the arduinouno?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "do you have info on the yun?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i need to know more about raspberrypi",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how much memory is there in a raspberry pi?",
+      "intent": "Specs",
       "entities": [
         {
           "entity": "HardwareType",
@@ -1821,18 +1779,7 @@
       ]
     },
     {
-      "text": "is there a site that sells the edison?",
-      "intent": "BuyHardware",
-      "entities": [
-        {
-          "entity": "HardwareType",
-          "startPos": 7,
-          "endPos": 7
-        }
-      ]
-    },
-    {
-      "text": "how can i build something with neopixels?",
+      "text": "i want to learn about the raspberry pi",
       "intent": "LearnTopic",
       "entities": [
         {
@@ -1843,15 +1790,68 @@
       ]
     },
     {
-      "text": "how can i add a coin acceptor to a hack?",
-      "intent": "LearnTopic",
+      "text": "so what can i say",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "where can i buy an arduino",
+      "intent": "BuyHardware",
       "entities": [
         {
           "entity": "HardwareType",
           "startPos": 5,
-          "endPos": 6
+          "endPos": 5
         }
       ]
+    },
+    {
+      "text": "how can i learn how to use the lilypad?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "what cpu architecture is in the raspberry pi 3?",
+      "intent": "Specs",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "how do i get started with the lightbluebean",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "that's not what i said",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "how can i get started?",
+      "intent": "LearnTopic",
+      "entities": []
+    },
+    {
+      "text": "yo how are you doing?",
+      "intent": "Greeting",
+      "entities": []
     },
     {
       "text": "who is brian sherwin?",
@@ -3585,6 +3585,249 @@
           "endPos": 9
         }
       ]
+    },
+    {
+      "text": "got up",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "and just exactly who is this brian sherwin?",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "when i say how can you help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what site to sell see me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where can i buy recipe reply",
+      "intent": "BuyHardware",
+      "entities": []
+    },
+    {
+      "text": "no i mean like i was at one case i think it might depending on the crazy given how you know",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "oh yeah i mean that's easy already did that like twice right so",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "my stupid but is not following me like it's supposed to",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how to communicate",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "so the subtitles look kinda jittery to me you see how their jittering and obviously you can tell that they're not taking in my view",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "yo dude how can i learn the arduino?",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what is the hololens",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "how is it going",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what is arduino",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "kallmann's",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where can i buy recipe by",
+      "intent": "BuyHardware",
+      "entities": []
+    },
+    {
+      "text": "what's the difference between an arduino and a photon?",
+      "intent": "Compare",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 7,
+          "endPos": 7
+        },
+        {
+          "entity": "HardwareType",
+          "startPos": 10,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "i'm sorry i'm not sure what you're asking me",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "are you know",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "are you doing",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "who is brian shortland",
+      "intent": "WhoIs",
+      "entities": [
+        {
+          "entity": "Person",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "ok thanks anyway",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "tell me about it iot device",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "what are you the command",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "suck my sentence",
+      "intent": "Complain",
+      "entities": []
+    },
+    {
+      "text": "microwaves",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "we're gonna see if you can find the best",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "can you help me in the",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "or ok know it suck my sentence and it told me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "nice, so what can i ask you?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how you doing",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how can i learn the motors",
+      "intent": "LearnTopic",
+      "entities": [
+        {
+          "entity": "HardwareType",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "well it does have a color like the pain",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i've been i can't answer that",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "nice",
+      "intent": "ThankYou",
+      "entities": []
+    },
+    {
+      "text": "kallmann's koemans with",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "it's really close",
+      "intent": "None",
+      "entities": []
     }
   ]
 }
