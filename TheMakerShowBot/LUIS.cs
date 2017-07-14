@@ -8,6 +8,11 @@ using Newtonsoft.Json;
 
 namespace TheMakerShowBot
 {
+    // DEPRECATION NOTE: The project was updated to use the LuisDialog. This file is the old implementation
+    // that was calling the LUIS REST service directly and parsing the results.
+    // It has been removed from the Bot project, but has not been deleted yet, which is why it is still
+    // visible in the Git folder.
+
     // Generic class used to parse user messages with LUIS from Microsoft Cognitive Services
     public class LUISMakerShowClient
     {
