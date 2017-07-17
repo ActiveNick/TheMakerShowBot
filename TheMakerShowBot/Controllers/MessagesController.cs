@@ -24,6 +24,8 @@ namespace TheMakerShowBot
             ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
             if (activity.Type == ActivityTypes.Message)
             {
+                // Initiate a LUIS Dialog since all user messages need to be parsed
+                // with language understanding in Microsoft Cognitive Services.
                 await Conversation.SendAsync(activity, () => new RootLuisDialog());
             }
             else

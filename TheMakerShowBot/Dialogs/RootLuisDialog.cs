@@ -13,6 +13,9 @@ using TheMakerShowBot.Services;
 
 namespace TheMakerShowBot.Dialogs
 {
+    // Please replace the LuisModel attribute with your own LUIS App ID and subscription key, 
+    // mine is for testing only and has a very low monthly cap, so don't bother stealing it.
+    // Visit LUIS.ai to learn more about Language Understanding in Microsoft Cognitive Services.
     [LuisModel("e86d239e-7bd2-40ac-8881-03fbd8aa0d29", "26e9e3fec3904829983742aa809770e6")]
     [Serializable]
     public class RootLuisDialog : LuisDialog<object>
@@ -21,6 +24,8 @@ namespace TheMakerShowBot.Dialogs
 
         private const string EntityPerson = "Person";
 
+        // This is needed since all LUIS models should have an empty or "None" intent to catch
+        // all the garbage users can type or say.
         [LuisIntent("")]
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
@@ -178,8 +183,8 @@ namespace TheMakerShowBot.Dialogs
             context.Wait(this.MessageReceived);
         }
 
-        // Implementation is not complete on this intent,
-        // this was for a live demo at a conference
+        // Implementation of this intent is not complete, stay tuned.
+        // This was added during a live demo at a conference.
         [LuisIntent("Compare")]
         public async Task Compare(IDialogContext context, LuisResult result)
         {
@@ -197,7 +202,7 @@ namespace TheMakerShowBot.Dialogs
                 }
             }
 
-            string phrase = $"Sorry, I don't really know exactly the differences between {hardware1} and {hardware2}.";
+            string phrase = $"Sorry, I don't really know the difference between {hardware1} and {hardware2}.";
 
             var message = context.MakeMessage();
             message.Text = phrase;
