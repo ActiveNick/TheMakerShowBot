@@ -25,7 +25,11 @@ namespace TheMakerShowBot.Dialogs
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
-            string message = $"I'm sorry, but I'm not sure what you're asking me. Type 'help' if you need assistance.";
+            string phrase = $"I'm sorry, but I'm not sure what you're asking me. Type 'help' if you need assistance.";
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
@@ -43,7 +47,11 @@ namespace TheMakerShowBot.Dialogs
                 hardware = hardwareEntityRecommendation.Entity;
             }
 
-            string message = MakerDataService.GetResource(hardware);
+            string phrase = MakerDataService.GetResource(hardware);
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
@@ -61,7 +69,11 @@ namespace TheMakerShowBot.Dialogs
                 hardware = hardwareEntityRecommendation.Entity;
             }
 
-            string message = MakerDataService.GetStore(hardware);
+            string phrase = MakerDataService.GetStore(hardware);
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
@@ -85,6 +97,7 @@ namespace TheMakerShowBot.Dialogs
 
             if (maker != null)
             {
+                // Create a new Hero Card showing the person's Name, Title, Locastion, Photo and a Twitter profile button
                 var heroCard = new HeroCard
                 {
                     Title = maker.Name,
@@ -95,6 +108,9 @@ namespace TheMakerShowBot.Dialogs
                 };
                 var attachment = heroCard.ToAttachment();
                 message.Attachments.Add(attachment);
+
+                // Set the text to be spoken out loud since we don;t want to just read the Hero Card data
+                message.Speak = $"{maker.Name} is a {maker.Title} based in {maker.Location}.";
             }
             else
             {
@@ -109,7 +125,11 @@ namespace TheMakerShowBot.Dialogs
         [LuisIntent("Greeting")]
         public async Task Greeting(IDialogContext context, LuisResult result)
         {
-            string message = "Hi! I'm the Maker Show Bot and I'm here to help you become a maker";
+            string phrase = "Hi! I'm the Maker Show Bot and I'm here to help you become a maker";
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
@@ -119,7 +139,11 @@ namespace TheMakerShowBot.Dialogs
         [LuisIntent("Help")]
         public async Task Help(IDialogContext context, LuisResult result)
         {
-            string message = "Simply ask me questions about different technologies you want to learn or buy";
+            string phrase = "Simply ask me questions about different technologies you want to learn or buy";
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
@@ -129,7 +153,11 @@ namespace TheMakerShowBot.Dialogs
         [LuisIntent("ThankYou")]
         public async Task ThankYou(IDialogContext context, LuisResult result)
         {
-            string message = "No problem, happy to help";
+            string phrase = "No problem, happy to help";
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
@@ -139,7 +167,11 @@ namespace TheMakerShowBot.Dialogs
         [LuisIntent("Complain")]
         public async Task Complain(IDialogContext context, LuisResult result)
         {
-            string message = "I'm sorry, I'm doing my best. Try again, maybe?";
+            string phrase = "I'm sorry, I'm doing my best. Try again, maybe?";
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
@@ -165,7 +197,11 @@ namespace TheMakerShowBot.Dialogs
                 }
             }
 
-            string message = $"Sorry, I don't really know exactly the differences between {hardware1} and {hardware2}.";
+            string phrase = $"Sorry, I don't really know exactly the differences between {hardware1} and {hardware2}.";
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = phrase;
 
             await context.PostAsync(message);
 
