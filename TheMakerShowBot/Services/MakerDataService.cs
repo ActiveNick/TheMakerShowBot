@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using TheMakerShowBot.Models;
 
 namespace TheMakerShowBot.Services
 {
@@ -290,10 +291,12 @@ namespace TheMakerShowBot.Services
             return strRet;
         }
 
-        public static string GetPerson(string strName)
+        public static Person GetPerson(string strName)
         {
             string strRet = string.Empty;
             strName = strName.Replace(" ", ""); // Remove all spaces to make it easier to parse the parameters
+
+            Person maker = new Person();
 
             // The switch includes a lot of misspellings to account for common errors that can occur when
             // dealing with input coming from Speech Recognition with Open Dictation.
@@ -302,16 +305,34 @@ namespace TheMakerShowBot.Services
                 case "briansherwin":
                 case "brianshwerwin":
                 case "sherwin":
-                    strRet = "Brian Sherwin is a Microsoft Technical Evangelist based in Columbus, Ohio.";
+                    maker.Name = "Brian Sherwin";
+                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Location = "Columbus, OH";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/473558593250148353/u7jMVvfk_400x400.jpeg";
+                    maker.TwitterUrl = "https://twitter.com/bsherwin";
+
+                    //strRet = "Brian Sherwin is a Microsoft Technical Evangelist based in Columbus, Ohio.";
                     break;
                 case "nicklandry":
                 case "nicklaundry":
                 case "landry":
-                    strRet = "Nick Landry is a Microsoft Technical Evangelist based in New York City.";
+                    maker.Name = "Nick Landry";
+                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Location = "New York, NY";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/877892100783828992/Fq8KQiDA_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/ActiveNick";
+
+                    //strRet = "Nick Landry is a Microsoft Technical Evangelist based in New York City.";
                     break;
                 case "jeremyfoster":
                 case "foster":
-                    strRet = "Jeremy Foster is a Microsoft Technical Evangelist based in Seattle, Washington.";
+                    maker.Name = "Jeremy Foster";
+                    maker.Title = "Microsoft Software Development Engineer";
+                    maker.Location = "Seattle, WA";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/851478701023805441/J-Sc3ZV2_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/codefoster";
+
+                    //strRet = "Jeremy Foster is a Microsoft Technical Evangelist based in Seattle, Washington.";
                     break;
                 case "bretstateham":
                 case "bretstatehim":
@@ -324,14 +345,29 @@ namespace TheMakerShowBot.Services
                 case "brett":
                 case "bretstadium":
                 case "brettstadium":
-                    strRet = "Bret Stateham is a Microsoft Technical Evangelist based in San Diego.";
+                    maker.Name = "Bret Stateham";
+                    maker.Title = "Microsoft Software Development Engineer";
+                    maker.Location = "San Diego, CA";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/562664058/BSHS01_Retouched_256_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/bretstateham";
+
+                    //strRet = "Bret Stateham is a Microsoft Technical Evangelist based in San Diego.";
                     break;
                 case "staceymulcahy":
                 case "stacymulcahy":
+                case "staceymulcahey":
+                case "stacymulcahey":
                 case "stacey":
                 case "stacy":
                 case "mulcahy":
-                    strRet = "Stacey Mulcahy is a Program Manager for the Microsoft Garage in Vancouver, British Columbia.";
+                case "mulcahey":
+                    maker.Name = "Stacey Mulcahy";
+                    maker.Title = "Program Manager, Microsoft Garage";
+                    maker.Location = "Vancouver, BC";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/596112741120638977/ggVL3fkj_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/bitchwhocodes";
+
+                    //strRet = "Stacey Mulcahy is a Program Manager for the Microsoft Garage in Vancouver, British Columbia.";
                     break;
                 case "rachelweil":
                 case "rachelveil":
@@ -339,65 +375,138 @@ namespace TheMakerShowBot.Services
                 case "rachelwhile":
                 case "while":
                 case "weil":
-                    strRet = "Rachel Weil is a Microsoft Technical Evangelist based in Austin, Texas.";
+                    maker.Name = "Rachel Weil";
+                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Location = "Austin, TX";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/860923782961168384/sKm4ZHxy_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/partytimeHXLNT";
+
+                    //strRet = "Rachel Weil is a Microsoft Technical Evangelist based in Austin, Texas.";
                     break;
                 case "pauldecarlo":
                 case "decarlo":
                 case "carlo":
-                    strRet = "Paul De Carlo is a Microsoft Technical Evangelist based in Houston, Texas.";
+                    maker.Name = "Paul DeCarlo";
+                    maker.Title = "Microsoft Software Development Engineer";
+                    maker.Location = "Houston, TX";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/771055098848022528/MVRQJ3If_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/pjdecarlo";
+
+                    //strRet = "Paul DeCarlo is a Microsoft Technical Evangelist based in Houston, Texas.";
                     break;
                 case "davidwashington":
                 case "washington":
-                    strRet = "David Washington is a Director of Technical Evangelist at Microsoft in Minnesota.";
+                    maker.Name = "David Washington";
+                    maker.Title = "Microsoft Director, Technical Evangelism";
+                    maker.Location = "Saint Paul, MN";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/378800000227509297/a60236af1fe6d45f29e1c8fcd7405b58_400x400.jpeg";
+                    maker.TwitterUrl = "https://twitter.com/dwcares";
+
+                    //strRet = "David Washington is a Director of Technical Evangelism at Microsoft in Minnesota.";
                     break;
                 case "franklavigne":
                 case "franklavigna":
                 case "lavigna":
                 case "lavigne":
                 case "vigne":
-                    strRet = "Frank La Vigne is a Microsoft Technical Evangelist based in Washington, DC.";
+                    maker.Name = "Frank La Vigne";
+                    maker.Title = "Data Scientist & former Microsoft Technical Evangelist";
+                    maker.Location = "Washington, DC";
+                    maker.ImageUrl = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAtwAAAAJDVjZDk3MzE4LTFkMmYtNDU2Zi04MzA2LTY0NjcwMzNkZmJmNQ.jpg";
+                    maker.TwitterUrl = "https://twitter.com/tableteer";
+
+                    //strRet = "Frank La Vigne is a Microsoft Technical Evangelist based in Washington, DC.";
                     break;
                 case "jamesmccaffrey":
                 case "mccaffrey":
-                    strRet = "James McCaffrey is a Senior Researcher  at Microsoft Research in Redmond, Washington.";
+                    maker.Name = "James McCaffrey";
+                    maker.Title = "Senior Researcher at Microsoft Research";
+                    maker.Location = "Redmond, WA";
+                    maker.ImageUrl = "https://sec.ch9.ms/sessions/build/2013/JamesMcCaffrey.jpg";
+                    maker.TwitterUrl = "https://twitter.com/MSFTResearch";
+
+                    //strRet = "James McCaffrey is a Senior Researcher at Microsoft Research in Redmond, Washington.";
                     break;
                 case "jaredbienz":
                 case "bienz":
-                    strRet = "Jared Bienz is a Microsoft Technical Evangelist based in Houston, Texas.";
+                    maker.Name = "Jared Bienz";
+                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Location = "Houston, TX";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/1267332786/00_-_White_Wall_Square_Face_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/jbienz";
+
+                    //strRet = "Jared Bienz is a Microsoft Technical Evangelist based in Houston, Texas.";
                     break;
                 case "nathanielrose":
                 case "rose":
-                    strRet = "Nathaniel Rose is a Microsoft Technical Evangelist based in San Francisco, California.";
+                    maker.Name = "Nathaniel Rose";
+                    maker.Title = "Microsoft Software Development Engineer";
+                    maker.Location = "San Francisco, CA";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/469225813154336770/uzqMx93S_400x400.jpeg";
+                    maker.TwitterUrl = "https://twitter.com/naterose2";
+
+                    //strRet = "Nathaniel Rose is a Microsoft Technical Evangelist based in San Francisco, California.";
                     break;
                 case "kenny":
                 case "kenny'spaid":
                 case "kennyspade":
                 case "spade":
-                    strRet = "Kenny Spade is a Program Manager for the Microsoft Garage in Silicon Valley, California.";
+                    maker.Name = "Kenny Spade";
+                    maker.Title = "Program Manager for the Microsoft Garage";
+                    maker.Location = "Silicon valley, CA";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/392114511/4531_104097427649_604992649_2692227_3915030_n_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/kennyspade";
+
+                    //strRet = "Kenny Spade is a Program Manager for the Microsoft Garage in Silicon Valley, California.";
                     break;
                 case "davidcrook":
                 case "crook":
-                    strRet = "David Crook is a Microsoft Technical Evangelist based in Miami, Florida.";
+                    maker.Name = "David Crook";
+                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Location = "Deerfield Beach, Florida";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/701998221741133824/Al7sZ3QD_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/data4bots";
+
+                    //strRet = "David Crook is a Microsoft Technical Evangelist based in Miami, Florida.";
                     break;
                 case "samstokes":
                 case "stokes":
-                    strRet = "Sam Stokes is a former Microsoft Technical Evangelist now working on the Mars Habitat mission at UCLA in Southern California.";
+                    maker.Name = "Sam Stokes";
+                    maker.Title = "Former Microsoft Technical Evangelist";
+                    maker.Location = "Dana Point, CA";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/58772808/sam_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/socalsam";
+
+                    //strRet = "Sam Stokes is a former Microsoft Technical Evangelist now working on the Mars Habitat mission at UCLA in Southern California.";
                     break;
                 case "davidsheinkopf":
                 case "davesheinkopf":
                 case "sheinkopf":
-                    strRet = "David Sheinkopf is an Electronics Teacher and the Director of Education at Pioneer Works Center for Art and Innovation in Brooklyn, New York.";
+                    maker.Name = "David Sheinkopf";
+                    maker.Title = "Electronics Teacher & Director of Education at Pioneer Works Center for Art and Innovation";
+                    maker.Location = "Brooklyn, NY";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/3364417376/71be72f79112703e2fed955e954563b2_400x400.jpeg";
+                    maker.TwitterUrl = "https://twitter.com/";
+
+                    //strRet = "David Sheinkopf is an Electronics Teacher and the Director of Education at Pioneer Works Center for Art and Innovation in Brooklyn, New York.";
                     break;
                 case "ianphilpot":
                 case "philpot":
-                    strRet = "Ian Philpot is a Microsoft Technical Evangelist based in Atlanta, Georgia.";
+                    maker.Name = "Ian Philpot";
+                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Location = "Atlanta, GA";
+                    maker.ImageUrl = "https://pbs.twimg.com/profile_images/829692939056070656/10LZD60A_400x400.jpg";
+                    maker.TwitterUrl = "https://twitter.com/tripdubroot";
+
+                    //strRet = "Ian Philpot is a Microsoft Technical Evangelist based in Atlanta, Georgia.";
                     break;
                 default:
-                    strRet = "I'm sorry. I don't have any information about " + strName + ".";
+                    maker = null;
+                    //strRet = "I'm sorry. I don't have any information about " + strName + ".";
                     break;
             }
 
-            return strRet;
+            return maker;
         }
     }
 }

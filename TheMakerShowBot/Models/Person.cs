@@ -11,5 +11,6 @@ namespace TheMakerShowBot.Models
         public string Title { get; set; }
         public string Location { get; set; }
         public string ImageUrl { get; set; }
+        public string TwitterUrl { get; set; }
     }
 }

@@ -79,7 +79,27 @@ namespace TheMakerShowBot.Dialogs
                 person = hardwareEntityPerson.Entity;
             }
 
-            string message = MakerDataService.GetPerson(person);
+            Person maker = MakerDataService.GetPerson(person);
+
+            var message = context.MakeMessage();
+
+            if (maker != null)
+            {
+                var heroCard = new HeroCard
+                {
+                    Title = maker.Name,
+                    Subtitle = maker.Title,
+                    Text = $"Location: {maker.Location}",
+                    Images = new List<CardImage> { new CardImage(maker.ImageUrl) },
+                    Buttons = new List<CardAction> { new CardAction(ActionTypes.OpenUrl, "Twitter profile", value: maker.TwitterUrl) }
+                };
+                var attachment = heroCard.ToAttachment();
+                message.Attachments.Add(attachment);
+            }
+            else
+            {
+                message.Text = $"I'm sorry. I don't have any information about {person}";
+            }
 
             await context.PostAsync(message);
 
