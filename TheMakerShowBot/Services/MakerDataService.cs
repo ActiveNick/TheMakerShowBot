@@ -22,6 +22,7 @@ namespace TheMakerShowBot.Services
             switch (strTech.ToLower())
             {
                 case "arduino":
+                case "adruino":
                 case "arduinouno":
                 case "ardiuno":
                 case "ourdoweknow":

@@ -35,10 +35,17 @@ namespace TheMakerShowBot.Dialogs
             var message = context.MakeMessage();
             message.Text = phrase;
             message.Speak = phrase;
+            message.InputHint = InputHints.ExpectingInput;
 
             await context.PostAsync(message);
 
             context.Wait(this.MessageReceived);
+        }
+
+        string BetterSpokenUrl(string original)
+        {
+            string s = original.Replace("https://", "").Replace("http://", "").Replace("www.", "");
+            return s;
         }
 
         [LuisIntent("LearnTopic")]
@@ -56,7 +63,8 @@ namespace TheMakerShowBot.Dialogs
 
             var message = context.MakeMessage();
             message.Text = phrase;
-            message.Speak = phrase;
+            message.Speak = BetterSpokenUrl(phrase);
+            message.InputHint = InputHints.ExpectingInput;
 
             await context.PostAsync(message);
 
@@ -78,7 +86,8 @@ namespace TheMakerShowBot.Dialogs
 
             var message = context.MakeMessage();
             message.Text = phrase;
-            message.Speak = phrase;
+            message.Speak = BetterSpokenUrl(phrase);
+            message.InputHint = InputHints.ExpectingInput;
 
             await context.PostAsync(message);
 
@@ -102,7 +111,7 @@ namespace TheMakerShowBot.Dialogs
 
             if (maker != null)
             {
-                // Create a new Hero Card showing the person's Name, Title, Locastion, Photo and a Twitter profile button
+                // Create a new Hero Card showing the person's Name, Title, Location, Photo and a Twitter profile button
                 var heroCard = new HeroCard
                 {
                     Title = maker.Name,
@@ -121,6 +130,7 @@ namespace TheMakerShowBot.Dialogs
             {
                 message.Text = $"I'm sorry. I don't have any information about {person}";
             }
+            message.InputHint = InputHints.ExpectingInput;
 
             await context.PostAsync(message);
 
@@ -135,11 +145,28 @@ namespace TheMakerShowBot.Dialogs
             var message = context.MakeMessage();
             message.Text = phrase;
             message.Speak = phrase;
+            message.InputHint = InputHints.ExpectingInput;
 
             await context.PostAsync(message);
 
             context.Wait(this.MessageReceived);
         }
+
+        [LuisIntent("AzureIoT")]
+        public async Task AzureIoT(IDialogContext context, LuisResult result)
+        {
+            string phrase = "You should check out the Azure IoT Hub Service at https://azure.microsoft.com/en-us/services/iot-hub/.";
+
+            var message = context.MakeMessage();
+            message.Text = phrase;
+            message.Speak = BetterSpokenUrl(phrase);
+            message.InputHint = InputHints.ExpectingInput;
+
+            await context.PostAsync(message);
+
+            context.Wait(this.MessageReceived);
+        }
+
 
         [LuisIntent("Help")]
         public async Task Help(IDialogContext context, LuisResult result)
@@ -149,6 +176,7 @@ namespace TheMakerShowBot.Dialogs
             var message = context.MakeMessage();
             message.Text = phrase;
             message.Speak = phrase;
+            message.InputHint = InputHints.ExpectingInput;
 
             await context.PostAsync(message);
 
