@@ -203,7 +203,7 @@ namespace TheMakerShowBot.Services
                 case "hollowlens":
                 case "wholeolins":
                 case "holograms":
-                    strRet = "Get started at https://dev.windows.com/holographic to learn about building apps and games for Windows Holographic. While you're there, check out the many tutorials available in the Holographic Academy.";
+                    strRet = "Get started at https://aka.ms/mr to learn about building apps and games for Windows Mixed Reality. While you're there, check out the many tutorials available in the Mixed Reality Academy.";
                     break;
                 default:
                     strRet = "I'm sorry. I'm not sure how to help you with this one. You should watch The Maker Show: Episode 0 - Meet Your Makers to learn more about the maker world and browse the videos at http://themakershow.io.";
@@ -318,7 +318,7 @@ namespace TheMakerShowBot.Services
                 case "nicklaundry":
                 case "landry":
                     maker.Name = "Nick Landry";
-                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Title = "Microsoft Software Engineer";
                     maker.Location = "New York, NY";
                     maker.ImageUrl = "https://pbs.twimg.com/profile_images/877892100783828992/Fq8KQiDA_400x400.jpg";
                     maker.TwitterUrl = "https://twitter.com/ActiveNick";
@@ -398,7 +398,7 @@ namespace TheMakerShowBot.Services
                 case "davidwashington":
                 case "washington":
                     maker.Name = "David Washington";
-                    maker.Title = "Microsoft Director, Technical Evangelism";
+                    maker.Title = "Microsoft Software Engineering Lead";
                     maker.Location = "Saint Paul, MN";
                     maker.ImageUrl = "https://pbs.twimg.com/profile_images/378800000227509297/a60236af1fe6d45f29e1c8fcd7405b58_400x400.jpeg";
                     maker.TwitterUrl = "https://twitter.com/dwcares";
@@ -411,7 +411,7 @@ namespace TheMakerShowBot.Services
                 case "lavigne":
                 case "vigne":
                     maker.Name = "Frank La Vigne";
-                    maker.Title = "Data Scientist & former Microsoft Technical Evangelist";
+                    maker.Title = "Microsoft Technical Solutions Professional";
                     maker.Location = "Washington, DC";
                     maker.ImageUrl = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAtwAAAAJDVjZDk3MzE4LTFkMmYtNDU2Zi04MzA2LTY0NjcwMzNkZmJmNQ.jpg";
                     maker.TwitterUrl = "https://twitter.com/tableteer";
@@ -431,7 +431,7 @@ namespace TheMakerShowBot.Services
                 case "jaredbienz":
                 case "bienz":
                     maker.Name = "Jared Bienz";
-                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Title = "Microsoft Software Engineer";
                     maker.Location = "Houston, TX";
                     maker.ImageUrl = "https://pbs.twimg.com/profile_images/1267332786/00_-_White_Wall_Square_Face_400x400.jpg";
                     maker.TwitterUrl = "https://twitter.com/jbienz";
@@ -463,7 +463,7 @@ namespace TheMakerShowBot.Services
                 case "davidcrook":
                 case "crook":
                     maker.Name = "David Crook";
-                    maker.Title = "Microsoft Technical Evangelist";
+                    maker.Title = "Microsoft Software Development Engineer";
                     maker.Location = "Deerfield Beach, Florida";
                     maker.ImageUrl = "https://pbs.twimg.com/profile_images/701998221741133824/Al7sZ3QD_400x400.jpg";
                     maker.TwitterUrl = "https://twitter.com/data4bots";
